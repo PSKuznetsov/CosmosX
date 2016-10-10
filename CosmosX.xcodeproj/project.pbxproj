@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA068EF21DAB6A9100957582 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA068EF11DAB6A9100957582 /* main.m */; };
-		FA068EF51DAB6A9100957582 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA068EF41DAB6A9100957582 /* AppDelegate.m */; };
-		FA068EF81DAB6A9100957582 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA068EF71DAB6A9100957582 /* ViewController.m */; };
-		FA068EFB1DAB6A9100957582 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA068EF91DAB6A9100957582 /* Main.storyboard */; };
-		FA068EFD1DAB6A9100957582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA068EFC1DAB6A9100957582 /* Assets.xcassets */; };
-		FA068F001DAB6A9100957582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA068EFE1DAB6A9100957582 /* LaunchScreen.storyboard */; };
+		09AC032861EF6A6CC3221271 /* MainScreenInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 974C96BA24C2663708A9B75E /* MainScreenInteractor.m */; };
+		0DB0DBF98F7AE851C4839B0A /* MainScreenRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6EEF4073FE6F602AD7BA58 /* MainScreenRouter.m */; };
+		1CE9275BA4B4AFAD065DD4A1 /* libPods-CosmosXUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E104C5226B3604EF887D3C3 /* libPods-CosmosXUITests.a */; };
+		26A9A64A7498A382707EF1E0 /* libPods-CosmosXTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5644F7180A3C5E200FA03E17 /* libPods-CosmosXTests.a */; };
+		468E1C951C91813F729E77F0 /* MainScreenAssemblyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9872A93168F784CC4C1FC4 /* MainScreenAssemblyTests.m */; };
+		46BDDEF2F7E58710AC1F862E /* MainScreenRouterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EC62AE7B5252607C338707 /* MainScreenRouterTests.m */; };
+		4DC3D806E73CD73A77882992 /* MainScreenViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E380F66FDE0AE5C3723F48 /* MainScreenViewControllerTests.m */; };
+		7B46573ADAD478FD431F3198 /* MainScreenAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F644EB53FEDA978272580F8 /* MainScreenAssembly.m */; };
+		87ACA91405B32736C3BDE6FA /* MainScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D712530AFCD493441CE790BC /* MainScreenViewController.m */; };
+		BBF5FDE44A337D9A02E794EB /* MainScreenInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8377066A55A30B8411D4FD4A /* MainScreenInteractorTests.m */; };
+		D53D05414A64ED761823DD36 /* MainScreenPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 116149DDB7966A07F80C7D9B /* MainScreenPresenter.m */; };
+		EB1118D933B3DBE713527C27 /* libPods-CosmosX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70022D6ED0CF04045AD09404 /* libPods-CosmosX.a */; };
+		F3ED0E811FB67F343416DA03 /* MainScreenPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC15FB04F3006C323BA7F44 /* MainScreenPresenterTests.m */; };
 		FA068F0B1DAB6A9100957582 /* CosmosXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA068F0A1DAB6A9100957582 /* CosmosXTests.m */; };
 		FA068F161DAB6A9100957582 /* CosmosXUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA068F151DAB6A9100957582 /* CosmosXUITests.m */; };
+		FA330B541DAB96BE007BF47C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7CFF341DAB90EA001B3C27 /* Assets.xcassets */; };
+		FA330B551DAB96BE007BF47C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7CFF351DAB90EA001B3C27 /* LaunchScreen.storyboard */; };
+		FA330B561DAB96BE007BF47C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7CFF371DAB90EA001B3C27 /* Main.storyboard */; };
+		FA330B671DAB9E27007BF47C /* PostCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA330B5A1DAB9E27007BF47C /* PostCollectionViewCell.m */; };
+		FA330B681DAB9E27007BF47C /* PostSizeCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA330B601DAB9E27007BF47C /* PostSizeCalculator.m */; };
+		FA330B691DAB9E27007BF47C /* PostCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FA330B621DAB9E27007BF47C /* PostCollectionViewFlowLayout.m */; };
+		FA330B6A1DAB9E27007BF47C /* DisplayDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA330B641DAB9E27007BF47C /* DisplayDataManager.m */; };
+		FA330B6D1DAB9E8F007BF47C /* CollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FA330B6C1DAB9E8F007BF47C /* CollectionViewDataSource.m */; };
+		FA330B701DAB9EA6007BF47C /* CollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA330B6F1DAB9EA6007BF47C /* CollectionViewDelegate.m */; };
+		FA7CFF3A1DAB90EA001B3C27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7CFF2F1DAB90EA001B3C27 /* AppDelegate.m */; };
+		FA7CFF3B1DAB90EA001B3C27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7CFF321DAB90EA001B3C27 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,15 +53,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		116149DDB7966A07F80C7D9B /* MainScreenPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainScreenPresenter.m; sourceTree = "<group>"; };
+		15DA41C6B242D3007F68D060 /* MainScreenInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainScreenInteractorOutput.h; sourceTree = "<group>"; };
+		1B7613038782549D40B5DCC3 /* Pods-CosmosX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CosmosX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CosmosX/Pods-CosmosX.debug.xcconfig"; sourceTree = "<group>"; };
+		2F644EB53FEDA978272580F8 /* MainScreenAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainScreenAssembly.m; sourceTree = "<group>"; };
+		342F76A587CA7E377FC8F43D /* MainScreenPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainScreenPresenter.h; sourceTree = "<group>"; };
+		3577BCFCDADFBFCD8FFE924F /* MainScreenViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainScreenViewOutput.h; sourceTree = "<group>"; };
+		3B9872A93168F784CC4C1FC4 /* MainScreenAssemblyTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainScreenAssemblyTests.m; sourceTree = "<group>"; };
+		5644F7180A3C5E200FA03E17 /* libPods-CosmosXTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CosmosXTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AEFF55A56C21CAB28443405 /* Pods-CosmosXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CosmosXTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CosmosXTests/Pods-CosmosXTests.debug.xcconfig"; sourceTree = "<group>"; };
+		70022D6ED0CF04045AD09404 /* libPods-CosmosX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CosmosX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7697E23F2D62BBCFAF0D9C49 /* Pods-CosmosXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CosmosXTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CosmosXTests/Pods-CosmosXTests.release.xcconfig"; sourceTree = "<group>"; };
+		8377066A55A30B8411D4FD4A /* MainScreenInteractorTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainScreenInteractorTests.m; sourceTree = "<group>"; };
+		88266B83C1D608B9FFBC6107 /* Pods-CosmosX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CosmosX.release.xcconfig"; path = "Pods/Target Support Files/Pods-CosmosX/Pods-CosmosX.release.xcconfig"; sourceTree = "<group>"; };
+		88A52D2C6B65D8C79862C438 /* MainScreenInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainScreenInteractor.h; sourceTree = "<group>"; };
+		8BCEF8DE58EF9FBE3E982EC8 /* Pods-CosmosXUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CosmosXUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CosmosXUITests/Pods-CosmosXUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8E104C5226B3604EF887D3C3 /* libPods-CosmosXUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CosmosXUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		974C96BA24C2663708A9B75E /* MainScreenInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainScreenInteractor.m; sourceTree = "<group>"; };
+		B4242293E262F5CF7954AAE6 /* MainScreenRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainScreenRouter.h; sourceTree = "<group>"; };
+		B6EC62AE7B5252607C338707 /* MainScreenRouterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainScreenRouterTests.m; sourceTree = "<group>"; };
+		CB6EEF4073FE6F602AD7BA58 /* MainScreenRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainScreenRouter.m; sourceTree = "<group>"; };
+		CBC15FB04F3006C323BA7F44 /* MainScreenPresenterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainScreenPresenterTests.m; sourceTree = "<group>"; };
+		D0283D6546563DFC71F37C3F /* MainScreenModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainScreenModuleInput.h; sourceTree = "<group>"; };
+		D15F4E0A26E1BEBB3D24E4F8 /* MainScreenRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainScreenRouterInput.h; sourceTree = "<group>"; };
+		D712530AFCD493441CE790BC /* MainScreenViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainScreenViewController.m; sourceTree = "<group>"; };
+		DF84284E26C5E8A2BD87211D /* MainScreenViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainScreenViewController.h; sourceTree = "<group>"; };
+		DFD72EDB8B3D1D6C860238DC /* MainScreenAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainScreenAssembly.h; sourceTree = "<group>"; };
+		E0DD5D707B0110DE0D77AD4E /* MainScreenViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainScreenViewInput.h; sourceTree = "<group>"; };
+		E2C2630C3F9FC80643899E54 /* MainScreenAssembly_Testable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainScreenAssembly_Testable.h; sourceTree = "<group>"; };
+		E64481E43C20C95CA25AD63C /* MainScreenInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainScreenInteractorInput.h; sourceTree = "<group>"; };
+		EFD0E378D00483055F459E4A /* Pods-CosmosXUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CosmosXUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CosmosXUITests/Pods-CosmosXUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F2E380F66FDE0AE5C3723F48 /* MainScreenViewControllerTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainScreenViewControllerTests.m; sourceTree = "<group>"; };
 		FA068EED1DAB6A9100957582 /* CosmosX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CosmosX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA068EF11DAB6A9100957582 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FA068EF31DAB6A9100957582 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FA068EF41DAB6A9100957582 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FA068EF61DAB6A9100957582 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FA068EF71DAB6A9100957582 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FA068EFA1DAB6A9100957582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FA068EFC1DAB6A9100957582 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FA068EFF1DAB6A9100957582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA068F011DAB6A9100957582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA068F061DAB6A9100957582 /* CosmosXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CosmosXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA068F0A1DAB6A9100957582 /* CosmosXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CosmosXTests.m; sourceTree = "<group>"; };
@@ -51,6 +93,26 @@
 		FA068F111DAB6A9100957582 /* CosmosXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CosmosXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA068F151DAB6A9100957582 /* CosmosXUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CosmosXUITests.m; sourceTree = "<group>"; };
 		FA068F171DAB6A9100957582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA330B591DAB9E27007BF47C /* PostCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCollectionViewCell.h; sourceTree = "<group>"; };
+		FA330B5A1DAB9E27007BF47C /* PostCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCollectionViewCell.m; sourceTree = "<group>"; };
+		FA330B5F1DAB9E27007BF47C /* PostSizeCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostSizeCalculator.h; sourceTree = "<group>"; };
+		FA330B601DAB9E27007BF47C /* PostSizeCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostSizeCalculator.m; sourceTree = "<group>"; };
+		FA330B611DAB9E27007BF47C /* PostCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		FA330B621DAB9E27007BF47C /* PostCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		FA330B631DAB9E27007BF47C /* DisplayDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayDataManager.h; sourceTree = "<group>"; };
+		FA330B641DAB9E27007BF47C /* DisplayDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayDataManager.m; sourceTree = "<group>"; };
+		FA330B651DAB9E27007BF47C /* DisplayDataManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayDataManagerDelegate.h; sourceTree = "<group>"; };
+		FA330B661DAB9E27007BF47C /* DisplayDataManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayDataManagerProtocol.h; sourceTree = "<group>"; };
+		FA330B6B1DAB9E8F007BF47C /* CollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewDataSource.h; sourceTree = "<group>"; };
+		FA330B6C1DAB9E8F007BF47C /* CollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewDataSource.m; sourceTree = "<group>"; };
+		FA330B6E1DAB9EA6007BF47C /* CollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewDelegate.h; sourceTree = "<group>"; };
+		FA330B6F1DAB9EA6007BF47C /* CollectionViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewDelegate.m; sourceTree = "<group>"; };
+		FA7CFF2E1DAB90EA001B3C27 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA7CFF2F1DAB90EA001B3C27 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA7CFF321DAB90EA001B3C27 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA7CFF341DAB90EA001B3C27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA7CFF361DAB90EA001B3C27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA7CFF381DAB90EA001B3C27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB1118D933B3DBE713527C27 /* libPods-CosmosX.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26A9A64A7498A382707EF1E0 /* libPods-CosmosXTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +136,161 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CE9275BA4B4AFAD065DD4A1 /* libPods-CosmosXUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		076DAE392DDCC88640F38376 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D15F4E0A26E1BEBB3D24E4F8 /* MainScreenRouterInput.h */,
+				B4242293E262F5CF7954AAE6 /* MainScreenRouter.h */,
+				CB6EEF4073FE6F602AD7BA58 /* MainScreenRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2309909ECD35EAA7C5608DA0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CBC15FB04F3006C323BA7F44 /* MainScreenPresenterTests.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		246C5CE1ECC6CBD9D43A7250 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B6EC62AE7B5252607C338707 /* MainScreenRouterTests.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5F1888CD1BF60E682F10E1DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2E380F66FDE0AE5C3723F48 /* MainScreenViewControllerTests.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62745B196D2B09694BA5D5B8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D0283D6546563DFC71F37C3F /* MainScreenModuleInput.h */,
+				342F76A587CA7E377FC8F43D /* MainScreenPresenter.h */,
+				116149DDB7966A07F80C7D9B /* MainScreenPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		83CBC225AB662B95E01AF6ED /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				849E68B23329A28387537AA4 /* Assembly */,
+				5F1888CD1BF60E682F10E1DB /* View */,
+				2309909ECD35EAA7C5608DA0 /* Presenter */,
+				B18C9DE376235276823E7B16 /* Interactor */,
+				246C5CE1ECC6CBD9D43A7250 /* Router */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		849E68B23329A28387537AA4 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				3B9872A93168F784CC4C1FC4 /* MainScreenAssemblyTests.m */,
+				E2C2630C3F9FC80643899E54 /* MainScreenAssembly_Testable.h */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		9414B67D75A8CC6439053E7E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E64481E43C20C95CA25AD63C /* MainScreenInteractorInput.h */,
+				15DA41C6B242D3007F68D060 /* MainScreenInteractorOutput.h */,
+				88A52D2C6B65D8C79862C438 /* MainScreenInteractor.h */,
+				974C96BA24C2663708A9B75E /* MainScreenInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		974A68F3624613A2D20EB90B /* UserStoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				83CBC225AB662B95E01AF6ED /* MainScreen */,
+			);
+			path = UserStoryTests;
+			sourceTree = "<group>";
+		};
+		B18C9DE376235276823E7B16 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8377066A55A30B8411D4FD4A /* MainScreenInteractorTests.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BD3B7DADDB295519A8AAA4B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B7613038782549D40B5DCC3 /* Pods-CosmosX.debug.xcconfig */,
+				88266B83C1D608B9FFBC6107 /* Pods-CosmosX.release.xcconfig */,
+				6AEFF55A56C21CAB28443405 /* Pods-CosmosXTests.debug.xcconfig */,
+				7697E23F2D62BBCFAF0D9C49 /* Pods-CosmosXTests.release.xcconfig */,
+				EFD0E378D00483055F459E4A /* Pods-CosmosXUITests.debug.xcconfig */,
+				8BCEF8DE58EF9FBE3E982EC8 /* Pods-CosmosXUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD9EFC9D440B29F4B58BEEDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70022D6ED0CF04045AD09404 /* libPods-CosmosX.a */,
+				5644F7180A3C5E200FA03E17 /* libPods-CosmosXTests.a */,
+				8E104C5226B3604EF887D3C3 /* libPods-CosmosXUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E396C1542DCB684DC7225B71 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E96327CA5075FE1490F1DED8 /* Assembly */,
+				EB6703429C772CFEC71CC13F /* View */,
+				62745B196D2B09694BA5D5B8 /* Presenter */,
+				9414B67D75A8CC6439053E7E /* Interactor */,
+				076DAE392DDCC88640F38376 /* Router */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		E96327CA5075FE1490F1DED8 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				DFD72EDB8B3D1D6C860238DC /* MainScreenAssembly.h */,
+				2F644EB53FEDA978272580F8 /* MainScreenAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		EB6703429C772CFEC71CC13F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA330B571DAB9E27007BF47C /* DisplayDataManager */,
+				E0DD5D707B0110DE0D77AD4E /* MainScreenViewInput.h */,
+				3577BCFCDADFBFCD8FFE924F /* MainScreenViewOutput.h */,
+				DF84284E26C5E8A2BD87211D /* MainScreenViewController.h */,
+				D712530AFCD493441CE790BC /* MainScreenViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FA068EE41DAB6A9100957582 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +298,8 @@
 				FA068F091DAB6A9100957582 /* CosmosXTests */,
 				FA068F141DAB6A9100957582 /* CosmosXUITests */,
 				FA068EEE1DAB6A9100957582 /* Products */,
+				BD3B7DADDB295519A8AAA4B7 /* Pods */,
+				DD9EFC9D440B29F4B58BEEDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,13 +316,9 @@
 		FA068EEF1DAB6A9100957582 /* CosmosX */ = {
 			isa = PBXGroup;
 			children = (
-				FA068EF31DAB6A9100957582 /* AppDelegate.h */,
-				FA068EF41DAB6A9100957582 /* AppDelegate.m */,
-				FA068EF61DAB6A9100957582 /* ViewController.h */,
-				FA068EF71DAB6A9100957582 /* ViewController.m */,
-				FA068EF91DAB6A9100957582 /* Main.storyboard */,
-				FA068EFC1DAB6A9100957582 /* Assets.xcassets */,
-				FA068EFE1DAB6A9100957582 /* LaunchScreen.storyboard */,
+				FA7CFF331DAB90EA001B3C27 /* Presentation Layer */,
+				FA7CFF2B1DAB90EA001B3C27 /* Bussiness Layer */,
+				FA7CFF2C1DAB90EA001B3C27 /* Core Layer */,
 				FA068F011DAB6A9100957582 /* Info.plist */,
 				FA068EF01DAB6A9100957582 /* Supporting Files */,
 			);
@@ -127,6 +338,7 @@
 			children = (
 				FA068F0A1DAB6A9100957582 /* CosmosXTests.m */,
 				FA068F0C1DAB6A9100957582 /* Info.plist */,
+				974A68F3624613A2D20EB90B /* UserStoryTests */,
 			);
 			path = CosmosXTests;
 			sourceTree = "<group>";
@@ -140,6 +352,127 @@
 			path = CosmosXUITests;
 			sourceTree = "<group>";
 		};
+		FA330B571DAB9E27007BF47C /* DisplayDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				FA330B581DAB9E27007BF47C /* CollectionViewCell */,
+				FA330B5B1DAB9E27007BF47C /* CollectionViewDataSource */,
+				FA330B5C1DAB9E27007BF47C /* CollectionViewDelegate */,
+				FA330B5D1DAB9E27007BF47C /* CollectionViewFlowLayout */,
+				FA330B631DAB9E27007BF47C /* DisplayDataManager.h */,
+				FA330B641DAB9E27007BF47C /* DisplayDataManager.m */,
+				FA330B651DAB9E27007BF47C /* DisplayDataManagerDelegate.h */,
+				FA330B661DAB9E27007BF47C /* DisplayDataManagerProtocol.h */,
+			);
+			path = DisplayDataManager;
+			sourceTree = "<group>";
+		};
+		FA330B581DAB9E27007BF47C /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FA330B591DAB9E27007BF47C /* PostCollectionViewCell.h */,
+				FA330B5A1DAB9E27007BF47C /* PostCollectionViewCell.m */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		FA330B5B1DAB9E27007BF47C /* CollectionViewDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				FA330B6B1DAB9E8F007BF47C /* CollectionViewDataSource.h */,
+				FA330B6C1DAB9E8F007BF47C /* CollectionViewDataSource.m */,
+			);
+			path = CollectionViewDataSource;
+			sourceTree = "<group>";
+		};
+		FA330B5C1DAB9E27007BF47C /* CollectionViewDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FA330B6E1DAB9EA6007BF47C /* CollectionViewDelegate.h */,
+				FA330B6F1DAB9EA6007BF47C /* CollectionViewDelegate.m */,
+			);
+			path = CollectionViewDelegate;
+			sourceTree = "<group>";
+		};
+		FA330B5D1DAB9E27007BF47C /* CollectionViewFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				FA330B5E1DAB9E27007BF47C /* Helpers */,
+				FA330B611DAB9E27007BF47C /* PostCollectionViewFlowLayout.h */,
+				FA330B621DAB9E27007BF47C /* PostCollectionViewFlowLayout.m */,
+			);
+			path = CollectionViewFlowLayout;
+			sourceTree = "<group>";
+		};
+		FA330B5E1DAB9E27007BF47C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FA330B5F1DAB9E27007BF47C /* PostSizeCalculator.h */,
+				FA330B601DAB9E27007BF47C /* PostSizeCalculator.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FA7CFF2B1DAB90EA001B3C27 /* Bussiness Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Bussiness Layer";
+			sourceTree = "<group>";
+		};
+		FA7CFF2C1DAB90EA001B3C27 /* Core Layer */ = {
+			isa = PBXGroup;
+			children = (
+				FA7CFF2D1DAB90EA001B3C27 /* AppDelegate */,
+				FA7CFF301DAB90EA001B3C27 /* BaseAssembly */,
+				FA7CFF311DAB90EA001B3C27 /* MainConfig */,
+			);
+			path = "Core Layer";
+			sourceTree = "<group>";
+		};
+		FA7CFF2D1DAB90EA001B3C27 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FA7CFF2E1DAB90EA001B3C27 /* AppDelegate.h */,
+				FA7CFF2F1DAB90EA001B3C27 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		FA7CFF301DAB90EA001B3C27 /* BaseAssembly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseAssembly;
+			sourceTree = "<group>";
+		};
+		FA7CFF311DAB90EA001B3C27 /* MainConfig */ = {
+			isa = PBXGroup;
+			children = (
+				FA7CFF321DAB90EA001B3C27 /* main.m */,
+			);
+			path = MainConfig;
+			sourceTree = "<group>";
+		};
+		FA7CFF331DAB90EA001B3C27 /* Presentation Layer */ = {
+			isa = PBXGroup;
+			children = (
+				FA7CFF341DAB90EA001B3C27 /* Assets.xcassets */,
+				FA7CFF351DAB90EA001B3C27 /* LaunchScreen.storyboard */,
+				FA7CFF371DAB90EA001B3C27 /* Main.storyboard */,
+				FA7CFF391DAB90EA001B3C27 /* UserStory */,
+			);
+			path = "Presentation Layer";
+			sourceTree = "<group>";
+		};
+		FA7CFF391DAB90EA001B3C27 /* UserStory */ = {
+			isa = PBXGroup;
+			children = (
+				E396C1542DCB684DC7225B71 /* MainScreen */,
+			);
+			path = UserStory;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +480,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA068F1A1DAB6A9100957582 /* Build configuration list for PBXNativeTarget "CosmosX" */;
 			buildPhases = (
+				FA5FD96C96FEBFCCC8864E0D /* [CP] Check Pods Manifest.lock */,
 				FA068EE91DAB6A9100957582 /* Sources */,
 				FA068EEA1DAB6A9100957582 /* Frameworks */,
 				FA068EEB1DAB6A9100957582 /* Resources */,
+				BA6AFE8541D09F5C5C30BDE0 /* [CP] Embed Pods Frameworks */,
+				8CBBA71D3782B8D77388A34F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +500,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA068F1D1DAB6A9100957582 /* Build configuration list for PBXNativeTarget "CosmosXTests" */;
 			buildPhases = (
+				4B8423FADEBD5CE75619467C /* [CP] Check Pods Manifest.lock */,
 				FA068F021DAB6A9100957582 /* Sources */,
 				FA068F031DAB6A9100957582 /* Frameworks */,
 				FA068F041DAB6A9100957582 /* Resources */,
+				3BCFE128F64F32697EB7FB25 /* [CP] Embed Pods Frameworks */,
+				2CD7DAE765B079D4C4CF80EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +521,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA068F201DAB6A9100957582 /* Build configuration list for PBXNativeTarget "CosmosXUITests" */;
 			buildPhases = (
+				67DAC31A0D4FC9FC39A41D04 /* [CP] Check Pods Manifest.lock */,
 				FA068F0D1DAB6A9100957582 /* Sources */,
 				FA068F0E1DAB6A9100957582 /* Frameworks */,
 				FA068F0F1DAB6A9100957582 /* Resources */,
+				8DD5EA4AA5797CCE9A072362 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,9 +590,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA068F001DAB6A9100957582 /* LaunchScreen.storyboard in Resources */,
-				FA068EFD1DAB6A9100957582 /* Assets.xcassets in Resources */,
-				FA068EFB1DAB6A9100957582 /* Main.storyboard in Resources */,
+				FA330B541DAB96BE007BF47C /* Assets.xcassets in Resources */,
+				FA330B551DAB96BE007BF47C /* LaunchScreen.storyboard in Resources */,
+				FA330B561DAB96BE007BF47C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,14 +612,147 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2CD7DAE765B079D4C4CF80EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CosmosXTests/Pods-CosmosXTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BCFE128F64F32697EB7FB25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CosmosXTests/Pods-CosmosXTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B8423FADEBD5CE75619467C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		67DAC31A0D4FC9FC39A41D04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8CBBA71D3782B8D77388A34F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CosmosX/Pods-CosmosX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DD5EA4AA5797CCE9A072362 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CosmosXUITests/Pods-CosmosXUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA6AFE8541D09F5C5C30BDE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CosmosX/Pods-CosmosX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA5FD96C96FEBFCCC8864E0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA068EE91DAB6A9100957582 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA068EF81DAB6A9100957582 /* ViewController.m in Sources */,
-				FA068EF51DAB6A9100957582 /* AppDelegate.m in Sources */,
-				FA068EF21DAB6A9100957582 /* main.m in Sources */,
+				FA330B671DAB9E27007BF47C /* PostCollectionViewCell.m in Sources */,
+				FA7CFF3A1DAB90EA001B3C27 /* AppDelegate.m in Sources */,
+				FA330B691DAB9E27007BF47C /* PostCollectionViewFlowLayout.m in Sources */,
+				FA7CFF3B1DAB90EA001B3C27 /* main.m in Sources */,
+				7B46573ADAD478FD431F3198 /* MainScreenAssembly.m in Sources */,
+				FA330B6A1DAB9E27007BF47C /* DisplayDataManager.m in Sources */,
+				FA330B681DAB9E27007BF47C /* PostSizeCalculator.m in Sources */,
+				FA330B6D1DAB9E8F007BF47C /* CollectionViewDataSource.m in Sources */,
+				87ACA91405B32736C3BDE6FA /* MainScreenViewController.m in Sources */,
+				D53D05414A64ED761823DD36 /* MainScreenPresenter.m in Sources */,
+				FA330B701DAB9EA6007BF47C /* CollectionViewDelegate.m in Sources */,
+				09AC032861EF6A6CC3221271 /* MainScreenInteractor.m in Sources */,
+				0DB0DBF98F7AE851C4839B0A /* MainScreenRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +761,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA068F0B1DAB6A9100957582 /* CosmosXTests.m in Sources */,
+				468E1C951C91813F729E77F0 /* MainScreenAssemblyTests.m in Sources */,
+				4DC3D806E73CD73A77882992 /* MainScreenViewControllerTests.m in Sources */,
+				F3ED0E811FB67F343416DA03 /* MainScreenPresenterTests.m in Sources */,
+				BBF5FDE44A337D9A02E794EB /* MainScreenInteractorTests.m in Sources */,
+				46BDDEF2F7E58710AC1F862E /* MainScreenRouterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,20 +793,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FA068EF91DAB6A9100957582 /* Main.storyboard */ = {
+		FA7CFF351DAB90EA001B3C27 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FA068EFA1DAB6A9100957582 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FA068EFE1DAB6A9100957582 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA068EFF1DAB6A9100957582 /* Base */,
+				FA7CFF361DAB90EA001B3C27 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FA7CFF371DAB90EA001B3C27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA7CFF381DAB90EA001B3C27 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -373,7 +852,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -415,7 +894,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -425,6 +904,7 @@
 		};
 		FA068F1B1DAB6A9100957582 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B7613038782549D40B5DCC3 /* Pods-CosmosX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FFASSW2393;
@@ -437,6 +917,7 @@
 		};
 		FA068F1C1DAB6A9100957582 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88266B83C1D608B9FFBC6107 /* Pods-CosmosX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FFASSW2393;
@@ -449,6 +930,7 @@
 		};
 		FA068F1E1DAB6A9100957582 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AEFF55A56C21CAB28443405 /* Pods-CosmosXTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = FFASSW2393;
@@ -462,6 +944,7 @@
 		};
 		FA068F1F1DAB6A9100957582 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7697E23F2D62BBCFAF0D9C49 /* Pods-CosmosXTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = FFASSW2393;
@@ -475,6 +958,7 @@
 		};
 		FA068F211DAB6A9100957582 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFD0E378D00483055F459E4A /* Pods-CosmosXUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = FFASSW2393;
 				INFOPLIST_FILE = CosmosXUITests/Info.plist;
@@ -487,6 +971,7 @@
 		};
 		FA068F221DAB6A9100957582 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BCEF8DE58EF9FBE3E982EC8 /* Pods-CosmosXUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = FFASSW2393;
 				INFOPLIST_FILE = CosmosXUITests/Info.plist;
@@ -516,6 +1001,7 @@
 				FA068F1C1DAB6A9100957582 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA068F1D1DAB6A9100957582 /* Build configuration list for PBXNativeTarget "CosmosXTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +1010,7 @@
 				FA068F1F1DAB6A9100957582 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA068F201DAB6A9100957582 /* Build configuration list for PBXNativeTarget "CosmosXUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +1019,7 @@
 				FA068F221DAB6A9100957582 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
