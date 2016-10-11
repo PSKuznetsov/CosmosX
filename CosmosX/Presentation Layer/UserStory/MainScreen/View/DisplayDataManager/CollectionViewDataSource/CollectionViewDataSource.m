@@ -7,7 +7,7 @@
 //
 
 #import "CollectionViewDataSource.h"
-#import "PostCollectionViewCell.h"
+#import "APODCollectionViewCell.h"
 
 static NSString *const kCollectionViewCellIdentifier = @"postCell";
 
@@ -19,7 +19,7 @@ static NSString *const kCollectionViewCellIdentifier = @"postCell";
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    PostCollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCollectionViewCellIdentifier
+    APODCollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCollectionViewCellIdentifier
                                                                               forIndexPath:indexPath];
     
     

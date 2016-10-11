@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,20 +21,45 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Vx8-XN-EVf">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TBv-B8-lui">
-                                    <size key="itemSize" width="50" height="50"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TBv-B8-lui" customClass="PostCollectionViewFlowLayout">
+                                    <size key="itemSize" width="145" height="207"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="8" minY="8" maxX="8" maxY="8"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="tzf-0u-opr">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kAPODPictureReuseIdentifier" id="tzf-0u-opr" customClass="APODCollectionViewCell">
+                                        <rect key="frame" x="8" y="8" width="145" height="207"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="145" height="207"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dFL-i1-Sle"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APOD Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvF-2C-duk">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="NOs-rv-mM6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="hvF-2C-duk" firstAttribute="centerX" secondItem="tzf-0u-opr" secondAttribute="centerX" id="6Hw-X7-Spc"/>
+                                            <constraint firstItem="hvF-2C-duk" firstAttribute="top" secondItem="dFL-i1-Sle" secondAttribute="bottom" constant="16" id="Pgp-As-AEy"/>
+                                            <constraint firstItem="hvF-2C-duk" firstAttribute="leading" secondItem="tzf-0u-opr" secondAttribute="leadingMargin" id="REV-lv-fXQ"/>
+                                            <constraint firstItem="dFL-i1-Sle" firstAttribute="top" secondItem="tzf-0u-opr" secondAttribute="top" id="ai1-3W-dIo"/>
+                                            <constraint firstAttribute="trailing" secondItem="dFL-i1-Sle" secondAttribute="trailing" id="dvq-kC-hjR"/>
+                                            <constraint firstItem="dFL-i1-Sle" firstAttribute="leading" secondItem="tzf-0u-opr" secondAttribute="leading" id="fdX-KA-glV"/>
+                                            <constraint firstItem="hvF-2C-duk" firstAttribute="trailing" secondItem="tzf-0u-opr" secondAttribute="trailingMargin" id="p88-Mg-7ls"/>
+                                            <constraint firstItem="dFL-i1-Sle" firstAttribute="height" secondItem="tzf-0u-opr" secondAttribute="height" multiplier="0.7" id="wcp-L2-Qxf"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="dFL-i1-Sle" id="lOF-Dh-I5i"/>
+                                            <outlet property="podTitle" destination="hvF-2C-duk" id="514-bS-jh1"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

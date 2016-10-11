@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PostCollectionViewCell : UICollectionViewCell
-@property (nonatomic, strong) IBOutlet UIImageView* imageView;
+@interface APODCollectionViewCell : UICollectionViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * imageView;
+@property (nonatomic, weak) IBOutlet UILabel * podTitle;
 @end

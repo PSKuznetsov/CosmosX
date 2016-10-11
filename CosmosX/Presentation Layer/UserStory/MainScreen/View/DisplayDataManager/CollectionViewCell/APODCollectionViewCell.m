@@ -6,8 +6,8 @@
 //  Copyright © 2016 Paul Kuznetsov. All rights reserved.
 //
 
-#import "PostCollectionViewCell.h"
+#import "APODCollectionViewCell.h"
 
-@implementation PostCollectionViewCell
+@implementation APODCollectionViewCell
 
 @end

@@ -7,15 +7,16 @@
 //
 
 #import "CollectionViewDelegate.h"
-#import "PostCollectionViewCell.h"
+#import "APODCollectionViewCell.h"
 
-static NSString *const kCollectionViewCellIdentifier = @"postCell";
+static NSString *const kAPODCellReuseIdentifier = @"kAPODPictureReuseIdentifier";
 
 
 @implementation CollectionViewDelegate 
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    PostCollectionViewCell* selectedCell = [collectionView dequeueReusableCellWithReuseIdentifier:kCollectionViewCellIdentifier
+    
+    APODCollectionViewCell* selectedCell = [collectionView dequeueReusableCellWithReuseIdentifier:kAPODCellReuseIdentifier
                                                                                      forIndexPath:indexPath];
     
 }
