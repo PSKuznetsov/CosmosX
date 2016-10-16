@@ -7,20 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DataRequestProtocol.h"
 
-@protocol DataRequestProtocol;
 @protocol CommonClientProtocol;
 @protocol APODDateFormatterProtocol;
+@protocol ResourceMapperProtocol;
 
 @interface APODDataRequestService : NSObject <DataRequestProtocol>
 
 #pragma mark - Dependecies
 
+@property (nonatomic, strong) id<ResourceMapperProtocol> ponsomizer;
 @property (nonatomic, strong) id<CommonClientProtocol> networkClient;
 @property (nonatomic, strong) id<APODDateFormatterProtocol> dateFormatter;
 
 #pragma mark - DataRequestProtocol
 
-- (void)requestDataFromDate:(NSDate *)date;
+- (void)requestDataFromDate:(NSDate *)date completion:(void(^)(PONSOModel* model, NSError* error))block;
 
 @end

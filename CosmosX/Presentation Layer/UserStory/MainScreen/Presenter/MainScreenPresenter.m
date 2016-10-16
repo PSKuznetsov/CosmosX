@@ -14,18 +14,18 @@
 
 @implementation MainScreenPresenter
 
-#pragma mark - Методы MainScreenModuleInput
+#pragma mark - MainScreenModuleInput
 
 - (void)configureModule {
     // Стартовая конфигурация модуля, не привязанная к состоянию view
 }
 
-#pragma mark - Методы MainScreenViewOutput
+#pragma mark - MainScreenViewOutput
 
 - (void)didTriggerViewReadyEvent {
 	[self.view setupInitialState];
 }
 
-#pragma mark - Методы MainScreenInteractorOutput
+#pragma mark - MainScreenInteractorOutput
 
 @end

@@ -38,6 +38,12 @@
 		FA7CFF3B1DAB90EA001B3C27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7CFF321DAB90EA001B3C27 /* main.m */; };
 		FA94B2AA1DAD074F001EEAA2 /* RequestDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA94B2A91DAD074F001EEAA2 /* RequestDateFormatter.m */; };
 		FA94B2B31DAD0A18001EEAA2 /* APODDataRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = FA94B2B21DAD0A18001EEAA2 /* APODDataRequestService.m */; };
+		FAD9B3E71DAD198000069752 /* PONSOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9B3E61DAD198000069752 /* PONSOModel.m */; };
+		FAD9B3EB1DAD343400069752 /* CoreComponentsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9B3EA1DAD343400069752 /* CoreComponentsAssembly.m */; };
+		FAD9B3EE1DAD377A00069752 /* ServicesAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9B3ED1DAD377A00069752 /* ServicesAssembly.m */; };
+		FAD9B3F51DAD3E8D00069752 /* APODDataStoreService.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9B3F41DAD3E8D00069752 /* APODDataStoreService.m */; };
+		FAD9B3F91DAD41C400069752 /* APODData.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9B3F81DAD41C400069752 /* APODData.m */; };
+		FAD9B4001DAD479A00069752 /* StoreModelAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9B3FF1DAD479A00069752 /* StoreModelAdapter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +139,20 @@
 		FA94B2B11DAD0A18001EEAA2 /* APODDataRequestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APODDataRequestService.h; sourceTree = "<group>"; };
 		FA94B2B21DAD0A18001EEAA2 /* APODDataRequestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APODDataRequestService.m; sourceTree = "<group>"; };
 		FA94B2B41DAD0A35001EEAA2 /* DataRequestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataRequestProtocol.h; sourceTree = "<group>"; };
+		FAD9B3E51DAD198000069752 /* PONSOModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PONSOModel.h; sourceTree = "<group>"; };
+		FAD9B3E61DAD198000069752 /* PONSOModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PONSOModel.m; sourceTree = "<group>"; };
+		FAD9B3E91DAD343400069752 /* CoreComponentsAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreComponentsAssembly.h; sourceTree = "<group>"; };
+		FAD9B3EA1DAD343400069752 /* CoreComponentsAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreComponentsAssembly.m; sourceTree = "<group>"; };
+		FAD9B3EC1DAD377A00069752 /* ServicesAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesAssembly.h; sourceTree = "<group>"; };
+		FAD9B3ED1DAD377A00069752 /* ServicesAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesAssembly.m; sourceTree = "<group>"; };
+		FAD9B3F21DAD3E6200069752 /* DataStoreProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStoreProtocol.h; sourceTree = "<group>"; };
+		FAD9B3F31DAD3E8D00069752 /* APODDataStoreService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APODDataStoreService.h; sourceTree = "<group>"; };
+		FAD9B3F41DAD3E8D00069752 /* APODDataStoreService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APODDataStoreService.m; sourceTree = "<group>"; };
+		FAD9B3F71DAD41C400069752 /* APODData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APODData.h; sourceTree = "<group>"; };
+		FAD9B3F81DAD41C400069752 /* APODData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APODData.m; sourceTree = "<group>"; };
+		FAD9B3FD1DAD478500069752 /* ModelAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelAdapterProtocol.h; sourceTree = "<group>"; };
+		FAD9B3FE1DAD479A00069752 /* StoreModelAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreModelAdapter.h; sourceTree = "<group>"; };
+		FAD9B3FF1DAD479A00069752 /* StoreModelAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreModelAdapter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -376,7 +396,7 @@
 		FA0EAE0E1DABFA4500650807 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FA0EAE101DABFA8400650807 /* RemoteModel */,
+				FAD9B3F61DAD418500069752 /* RealmModel */,
 				FA0EAE0F1DABFA6F00650807 /* PONSOModel */,
 			);
 			path = Model;
@@ -385,20 +405,17 @@
 		FA0EAE0F1DABFA6F00650807 /* PONSOModel */ = {
 			isa = PBXGroup;
 			children = (
+				FAD9B3E51DAD198000069752 /* PONSOModel.h */,
+				FAD9B3E61DAD198000069752 /* PONSOModel.m */,
 			);
 			path = PONSOModel;
-			sourceTree = "<group>";
-		};
-		FA0EAE101DABFA8400650807 /* RemoteModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RemoteModel;
 			sourceTree = "<group>";
 		};
 		FA0EAE111DABFAA800650807 /* CoreComponents */ = {
 			isa = PBXGroup;
 			children = (
+				FAD9B3E81DAD340C00069752 /* CoreComponentsAssembly */,
+				FAD9B3FA1DAD476A00069752 /* StoreModelAdapter */,
 				FA94B2A51DAD071C001EEAA2 /* DateFrormatters */,
 				FA0EAE1D1DABFE4C00650807 /* NetworkClients */,
 				FA0EAE121DABFC8900650807 /* ResourceMapper */,
@@ -471,6 +488,8 @@
 		FA0EAE211DAC00F000650807 /* ServicesAssembly */ = {
 			isa = PBXGroup;
 			children = (
+				FAD9B3EC1DAD377A00069752 /* ServicesAssembly.h */,
+				FAD9B3ED1DAD377A00069752 /* ServicesAssembly.m */,
 			);
 			path = ServicesAssembly;
 			sourceTree = "<group>";
@@ -478,6 +497,7 @@
 		FA0EAE221DAC010A00650807 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FAD9B3EF1DAD3E4400069752 /* DataStoreService */,
 				FA94B2AE1DAD09EC001EEAA2 /* APODDataRequesterService */,
 			);
 			path = Services;
@@ -673,6 +693,76 @@
 			isa = PBXGroup;
 			children = (
 				FA94B2B41DAD0A35001EEAA2 /* DataRequestProtocol.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FAD9B3E81DAD340C00069752 /* CoreComponentsAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				FAD9B3E91DAD343400069752 /* CoreComponentsAssembly.h */,
+				FAD9B3EA1DAD343400069752 /* CoreComponentsAssembly.m */,
+			);
+			path = CoreComponentsAssembly;
+			sourceTree = "<group>";
+		};
+		FAD9B3EF1DAD3E4400069752 /* DataStoreService */ = {
+			isa = PBXGroup;
+			children = (
+				FAD9B3F01DAD3E4400069752 /* ConcreteClasses */,
+				FAD9B3F11DAD3E4400069752 /* Protocols */,
+			);
+			path = DataStoreService;
+			sourceTree = "<group>";
+		};
+		FAD9B3F01DAD3E4400069752 /* ConcreteClasses */ = {
+			isa = PBXGroup;
+			children = (
+				FAD9B3F31DAD3E8D00069752 /* APODDataStoreService.h */,
+				FAD9B3F41DAD3E8D00069752 /* APODDataStoreService.m */,
+			);
+			path = ConcreteClasses;
+			sourceTree = "<group>";
+		};
+		FAD9B3F11DAD3E4400069752 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FAD9B3F21DAD3E6200069752 /* DataStoreProtocol.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FAD9B3F61DAD418500069752 /* RealmModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAD9B3F71DAD41C400069752 /* APODData.h */,
+				FAD9B3F81DAD41C400069752 /* APODData.m */,
+			);
+			path = RealmModel;
+			sourceTree = "<group>";
+		};
+		FAD9B3FA1DAD476A00069752 /* StoreModelAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				FAD9B3FB1DAD476A00069752 /* ConcreteClasses */,
+				FAD9B3FC1DAD476A00069752 /* Protocols */,
+			);
+			path = StoreModelAdapter;
+			sourceTree = "<group>";
+		};
+		FAD9B3FB1DAD476A00069752 /* ConcreteClasses */ = {
+			isa = PBXGroup;
+			children = (
+				FAD9B3FE1DAD479A00069752 /* StoreModelAdapter.h */,
+				FAD9B3FF1DAD479A00069752 /* StoreModelAdapter.m */,
+			);
+			path = ConcreteClasses;
+			sourceTree = "<group>";
+		};
+		FAD9B3FC1DAD476A00069752 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FAD9B3FD1DAD478500069752 /* ModelAdapterProtocol.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -944,8 +1034,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD9B3E71DAD198000069752 /* PONSOModel.m in Sources */,
 				FA0EAE2A1DAC056F00650807 /* NetworkClient.m in Sources */,
+				FAD9B3F91DAD41C400069752 /* APODData.m in Sources */,
 				FA330B671DAB9E27007BF47C /* APODCollectionViewCell.m in Sources */,
+				FAD9B3F51DAD3E8D00069752 /* APODDataStoreService.m in Sources */,
+				FAD9B4001DAD479A00069752 /* StoreModelAdapter.m in Sources */,
 				FA7CFF3A1DAB90EA001B3C27 /* AppDelegate.m in Sources */,
 				FA330B691DAB9E27007BF47C /* PostCollectionViewFlowLayout.m in Sources */,
 				FA7CFF3B1DAB90EA001B3C27 /* main.m in Sources */,
@@ -954,6 +1048,7 @@
 				FA330B6A1DAB9E27007BF47C /* DisplayDataManager.m in Sources */,
 				FA0EAE1A1DABFD8000650807 /* PONSOMapper.m in Sources */,
 				FA330B681DAB9E27007BF47C /* PostSizeCalculator.m in Sources */,
+				FAD9B3EE1DAD377A00069752 /* ServicesAssembly.m in Sources */,
 				FA330B6D1DAB9E8F007BF47C /* CollectionViewDataSource.m in Sources */,
 				FA0EAE2F1DAC062D00650807 /* ResponseModel.m in Sources */,
 				87ACA91405B32736C3BDE6FA /* MainScreenViewController.m in Sources */,
@@ -961,6 +1056,7 @@
 				FA330B701DAB9EA6007BF47C /* CollectionViewDelegate.m in Sources */,
 				09AC032861EF6A6CC3221271 /* MainScreenInteractor.m in Sources */,
 				FA94B2AA1DAD074F001EEAA2 /* RequestDateFormatter.m in Sources */,
+				FAD9B3EB1DAD343400069752 /* CoreComponentsAssembly.m in Sources */,
 				0DB0DBF98F7AE851C4839B0A /* MainScreenRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1039,6 +1135,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1087,6 +1184,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

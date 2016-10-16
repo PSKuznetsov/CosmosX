@@ -10,6 +10,8 @@
 
 @interface ResponseModel : NSObject
 
+@property (nonatomic, strong) NSDictionary* responseData;
+
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 @end

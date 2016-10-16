@@ -7,6 +7,7 @@
 //
 
 #import <Typhoon/Typhoon.h>
+#import "ServicesAssembly.h"
 
 /**
  @author Paul
@@ -14,5 +15,5 @@
  MainScreen module
  */
 @interface MainScreenAssembly : TyphoonAssembly
-
+@property (nonatomic, strong) ServicesAssembly* services;
 @end

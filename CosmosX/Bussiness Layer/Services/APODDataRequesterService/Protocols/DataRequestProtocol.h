@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class PONSOModel;
+
 @protocol DataRequestProtocol <NSObject>
 
-- (void)requestDataFromDate:(NSDate *)date;
+- (void)requestDataFromDate:(NSDate *)date completion:(void(^)(PONSOModel* model, NSError* error))block;
 
 @end

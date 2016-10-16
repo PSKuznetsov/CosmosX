@@ -9,11 +9,9 @@
 #import <AFNetworking.h>
 #import "NetworkClient.h"
 
-#import "CommonClientProtocol.h"
 #import "ResponseModel.h"
 
 static NSString * const baseURL = @"https://api.nasa.gov/planetary/apod";
-static NSString * const apiKey  = @"DEMO_KEY";
 
 @interface NetworkClient ()
 
@@ -26,7 +24,6 @@ static NSString * const apiKey  = @"DEMO_KEY";
                successe:(void (^)(ResponseModel* model, NSError* error))block {
     
     if (block) {
-        
         AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
         [manager GET:baseURL parameters:param progress:nil success:^(NSURLSessionTask *task, id responseObject) {
             

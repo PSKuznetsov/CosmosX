@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol APODDateFormatterProtocol;
+#import "APODDateFormatterProtocol.h"
 
 @interface RequestDateFormatter : NSObject <APODDateFormatterProtocol>
+
+#pragma mark - APODDateFormatterProtocol
+- (NSString *)formateDateForRequest:(NSDate *)date;
 
 @end

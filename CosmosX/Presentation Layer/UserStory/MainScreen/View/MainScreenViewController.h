@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 #import "MainScreenViewInput.h"
+#import "DisplayDataManagerDelegate.h"
 
 @protocol MainScreenViewOutput;
 @protocol DisplayDataManagerProtocol;
-@protocol DisplayDataManagerDelegate;
 
 @interface MainScreenViewController : UIViewController <MainScreenViewInput, DisplayDataManagerDelegate>
 

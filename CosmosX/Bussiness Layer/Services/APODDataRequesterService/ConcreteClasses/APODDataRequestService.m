@@ -7,24 +7,40 @@
 //
 
 #import "APODDataRequestService.h"
-#import "DataRequestProtocol.h"
 
 #import "CommonClientProtocol.h"
+#import "ResourceMapperProtocol.h"
 #import "APODDateFormatterProtocol.h"
+#import "PONSOModel.h"
+
+static NSString * const apiKey  = @"DEMO_KEY";
 
 
 @implementation APODDataRequestService
 
 #pragma mark - DataRequestProtocol
 
-- (void)requestDataFromDate:(NSDate *)date {
+- (void)requestDataFromDate:(NSDate *)date completion:(void(^)(PONSOModel* model, NSError* error))block{
     
     NSString* requestedDate = [self.dateFormatter formateDateForRequest:date];
-    NSDictionary* requestParam = @{@"api_key" : @"DEMO_KEY",
+    NSDictionary* requestParam = @{@"api_key" : apiKey,
                                    @"date" : requestedDate  };
-    [self.networkClient requestWithType:GetSessionType parameters:requestParam successe:^(ResponseModel *model, NSError *error) {
-        
-    }];
+    
+    if (block) {
+        [self.networkClient requestWithType:GetSessionType
+                                 parameters:requestParam
+                                   successe:^(ResponseModel *model, NSError *error) {
+                                       if (model) {
+                                           PONSOModel* mappedModel = (PONSOModel *)[self.ponsomizer mapResource:model.responseData];
+                                           block(mappedModel, nil);
+                                       }
+                                       else {
+                                           block(nil, error);
+                                       }
+                                   }];
+    }
+    
+    
 }
 
 @end

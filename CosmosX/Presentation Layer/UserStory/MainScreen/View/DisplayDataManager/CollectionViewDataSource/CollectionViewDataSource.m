@@ -9,7 +9,7 @@
 #import "CollectionViewDataSource.h"
 #import "APODCollectionViewCell.h"
 
-static NSString *const kCollectionViewCellIdentifier = @"postCell";
+static NSString *const kCollectionViewCellIdentifier = @"kAPODPictureReuseIdentifier";
 
 @implementation CollectionViewDataSource
 

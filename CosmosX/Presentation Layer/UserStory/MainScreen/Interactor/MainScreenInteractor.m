@@ -12,6 +12,6 @@
 
 @implementation MainScreenInteractor
 
-#pragma mark - Методы MainScreenInteractorInput
+#pragma mark - MainScreenInteractorInput
 
 @end

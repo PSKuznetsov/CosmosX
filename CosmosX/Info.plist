@@ -24,6 +24,8 @@
 	<true/>
 	<key>TyphoonInitialAssemblies</key>
 	<array>
+		<string>CoreComponentsAssembly</string>
+		<string>ServicesAssembly</string>
 		<string>MainScreenAssembly</string>
 	</array>
 	<key>UILaunchStoryboardName</key>

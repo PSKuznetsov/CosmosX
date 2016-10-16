@@ -9,12 +9,15 @@
 #import <Foundation/Foundation.h>
 
 #import "NetworkSessionType.h"
+#import "CommonClientProtocol.h"
 
 @class ResponseModel;
-@protocol CommonClientProtocol;
+
 
 @interface NetworkClient : NSObject <CommonClientProtocol>
 
-- (void)requestWithType:(SessionType)type parameters:(NSDictionary *)param successe:(void (^)(ResponseModel* model, NSError* error))block;
+- (void)requestWithType:(SessionType)type
+             parameters:(NSDictionary *)param
+               successe:(void (^)(ResponseModel* model, NSError* error))block;
 
 @end

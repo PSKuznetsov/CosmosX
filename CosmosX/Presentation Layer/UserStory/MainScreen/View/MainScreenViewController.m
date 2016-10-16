@@ -9,7 +9,6 @@
 #import "MainScreenViewController.h"
 
 #import "MainScreenViewOutput.h"
-#import "DisplayDataManagerProtocol.h"
 #import "DisplayDataManagerDelegate.h"
 
 @implementation MainScreenViewController

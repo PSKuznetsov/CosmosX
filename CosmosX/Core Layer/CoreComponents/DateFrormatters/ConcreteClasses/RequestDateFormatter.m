@@ -7,7 +7,6 @@
 //
 
 #import "RequestDateFormatter.h"
-#import "APODDateFormatterProtocol.h"
 
 @implementation RequestDateFormatter
 
@@ -15,7 +14,10 @@
 
 - (NSString *)formateDateForRequest:(NSDate *)date {
     
-    NSString* dateForRequest = nil;
+    NSDateFormatter* formatter = [[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"yyyy-MM-DD"];
+    
+    NSString* dateForRequest = [formatter stringFromDate:date];
     
     return dateForRequest;
 }

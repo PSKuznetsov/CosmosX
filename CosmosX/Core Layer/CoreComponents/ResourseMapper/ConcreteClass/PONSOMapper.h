@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol ResourceMapperProtocol;
+#import "ResourceMapperProtocol.h"
 
 @interface PONSOMapper : NSObject <ResourceMapperProtocol>
 

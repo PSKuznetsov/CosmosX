@@ -35,6 +35,10 @@
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(output)
                                                     with:[self presenterMainScreenModule]];
+                              [definition injectProperty:@selector(dataStore)
+                                                    with:[self.services dataStoreService]];
+                              [definition injectProperty:@selector(networkDataRequest)
+                                                    with:[self.services apodRequestService]];
                           }];
 }
 
