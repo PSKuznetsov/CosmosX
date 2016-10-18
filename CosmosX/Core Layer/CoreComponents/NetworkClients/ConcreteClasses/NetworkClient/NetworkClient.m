@@ -28,7 +28,9 @@ static NSString * const baseURL = @"https://api.nasa.gov/planetary/apod";
         [manager GET:baseURL parameters:param progress:nil success:^(NSURLSessionTask *task, id responseObject) {
             
             NSLog(@"JSON: %@", responseObject);
+            
             NSDictionary* responseDictionary = (NSDictionary *)responseObject;
+            NSLog(@"RESPONSE DICTIONARY: %@", responseDictionary);
             ResponseModel* response = [[ResponseModel alloc] initWithDictionary:responseDictionary];
             block(response, nil);
         } failure:^(NSURLSessionTask *operation, NSError *error) {

@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @protocol MainScreenInteractorOutput <NSObject>
-
+- (void)updateMainView;
 @end

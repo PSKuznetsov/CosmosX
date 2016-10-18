@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class PONSOModel;
+
 @protocol ResourceMapperProtocol <NSObject>
 
-- (id)mapResource:(NSDictionary *)dictionary;
+- (PONSOModel *)mapResource:(NSDictionary *)dictionary;
 
 @end

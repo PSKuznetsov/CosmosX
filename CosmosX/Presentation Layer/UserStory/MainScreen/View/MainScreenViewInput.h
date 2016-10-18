@@ -16,5 +16,6 @@
  Метод настраивает начальный стейт view
  */
 - (void)setupInitialState;
+- (void)updateView;
 
 @end

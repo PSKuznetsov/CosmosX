@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DataStoreProtocol.h"
 
 @import UIKit;
 
@@ -14,6 +15,7 @@
 
 #pragma mark - Dependecies
 
+@property (nonatomic, strong) id<DataStoreProtocol> dataStore;
 
 #pragma mark - UICollectionViewDataSource
 

@@ -10,7 +10,20 @@
 #import "APODData.h"
 #import <Realm/Realm.h>
 
+@interface APODDataStoreService ()
+@property (nonatomic, strong) RLMResults<APODData*>* requestResult;
+@end
+
 @implementation APODDataStoreService
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.requestResult = [[APODData allObjects] sortedResultsUsingProperty:@"date" ascending:NO];
+    }
+    return self;
+}
 
 - (void)storeModel:(PONSOModel *)model withCompletionBlock:(void(^)(NSError* error))block {
     
@@ -28,7 +41,7 @@
     }
 }
 
-- (void)modelForDate:(NSString *)date  withCompletionBlock:(void(^)(PONSOModel* model, NSError* error))block {
+- (void)modelForDate:(NSString *)date withCompletionBlock:(void(^)(PONSOModel* model, NSError* error))block {
     
     NSPredicate* predicate = [NSPredicate predicateWithFormat:@"date = %@", date];
     APODData* requestedModel = [[APODData objectsWithPredicate:predicate]firstObject];
@@ -46,5 +59,20 @@
     
 }
 
+- (PONSOModel *)retrieveModelForID:(NSInteger)identifier {
+    
+    RLMResults* results = [[APODData allObjects] sortedResultsUsingProperty:@"date" ascending:NO];
+    APODData* requestedModel = [results objectAtIndex:identifier];
+    NSLog(@"REQUESTED: %@", requestedModel);
+    PONSOModel* model = [self.adapter adaptModel:requestedModel forType:PONSOModelType];
+    NSLog(@"ADAPTED: %@", model);
+    
+    return model;
+}
+
+- (NSInteger)countOfModels {
+    NSInteger modelsCount = [[APODData allObjects]count];
+    return modelsCount;
+}
 
 @end

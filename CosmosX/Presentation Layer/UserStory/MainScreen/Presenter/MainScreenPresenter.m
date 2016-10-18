@@ -24,6 +24,12 @@
 
 - (void)didTriggerViewReadyEvent {
 	[self.view setupInitialState];
+    
+    [self.interactor retrieveUpToDateAPOD];
+}
+
+- (void)updateMainView {
+    [self.view updateView];
 }
 
 #pragma mark - MainScreenInteractorOutput

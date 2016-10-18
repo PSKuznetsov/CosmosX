@@ -20,32 +20,23 @@ static NSString * const url             =   @"url";
 
 @implementation PONSOMapper
 
-- (id)mapResource:(NSDictionary *)dictionary {
+- (PONSOModel *)mapResource:(NSDictionary *)dictionary {
     
-    PONSOModel* model = nil;
-    if ([dictionary objectForKey:copyright]) {
-        model.copyright = [dictionary objectForKey:copyright];
-    }
-    else if ([dictionary objectForKey:date]) {
-        model.date = [dictionary objectForKey:date];
-    }
-    else if ([dictionary objectForKey:explanation]) {
-        model.explanation = [dictionary objectForKey:explanation];
-    }
-    else if ([dictionary objectForKey:hdurl]) {
-        model.hdurl = [dictionary objectForKey:hdurl];
-    }
-    else if ([dictionary objectForKey:media_type]) {
-        model.media_type = [dictionary objectForKey:media_type];
-    }
-    else if ([dictionary objectForKey:service_version]) {
-        model.service_version = [dictionary objectForKey:service_version];
-    }
-    else if ([dictionary objectForKey:title]) {
-        model.title = [dictionary objectForKey:title];
-    }
-    else if ([dictionary objectForKey:url]) {
-        model.explanation = [dictionary objectForKey:url];
+    PONSOModel* model = [[PONSOModel alloc]init];
+    NSArray* allKeys = [dictionary allKeys];
+    
+    for (NSString* key in allKeys) {
+        
+        SEL selector = NSSelectorFromString(key);
+        
+        if ([model respondsToSelector:selector]) {
+            
+//For Getters
+//            IMP implementation = [model methodForSelector:selector];
+//            void (*func)(id, SEL, NSString*)  = (void *)implementation;
+//            func(model, selector, [dictionary objectForKey:key]);
+            [model setValue:[dictionary objectForKey:key] forKey:key];
+        }
     }
     
     return model;

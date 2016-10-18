@@ -9,6 +9,7 @@
 #import "MainScreenViewController.h"
 
 #import "MainScreenViewOutput.h"
+#import "DisplayDataManagerProtocol.h"
 #import "DisplayDataManagerDelegate.h"
 
 @implementation MainScreenViewController
@@ -17,13 +18,20 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-
+    
+    [self.collectionView setDelegate:[self.displayDataManager delegateForCollectionView]];
+    [self.collectionView setDataSource:[self.displayDataManager dataSourceForCollectionVIew]];
+    
 	[self.output didTriggerViewReadyEvent];
 }
 
 #pragma mark - MainScreenViewInput Methods
 
 - (void)setupInitialState {
+}
+
+- (void)updateView {
+    [self.collectionView reloadData];
 }
 
 #pragma mark - DisplayDataManagerDelegate

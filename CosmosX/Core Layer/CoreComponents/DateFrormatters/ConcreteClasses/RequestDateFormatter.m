@@ -15,10 +15,10 @@
 - (NSString *)formateDateForRequest:(NSDate *)date {
     
     NSDateFormatter* formatter = [[NSDateFormatter alloc]init];
-    [formatter setDateFormat:@"yyyy-MM-DD"];
+    [formatter setDateFormat:@"yyyy-MM-dd"];
     
     NSString* dateForRequest = [formatter stringFromDate:date];
-    
+    NSLog(@"DATA FOR REQUEST: %@", dateForRequest);
     return dateForRequest;
 }
 

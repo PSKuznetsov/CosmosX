@@ -12,6 +12,6 @@
 
 @interface PONSOMapper : NSObject <ResourceMapperProtocol>
 
-- (id)mapResource:(NSDictionary *)dictionary;
+- (PONSOModel *)mapResource:(NSDictionary *)dictionary;
 
 @end

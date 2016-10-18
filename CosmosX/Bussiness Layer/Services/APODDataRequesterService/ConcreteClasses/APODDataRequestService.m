@@ -31,10 +31,17 @@ static NSString * const apiKey  = @"DEMO_KEY";
                                  parameters:requestParam
                                    successe:^(ResponseModel *model, NSError *error) {
                                        if (model) {
-                                           PONSOModel* mappedModel = (PONSOModel *)[self.ponsomizer mapResource:model.responseData];
+                                           NSLog(@"INPUT MODEL: %@", model.responseData);
+                                           PONSOModel* mappedModel = [[PONSOModel alloc]init];
+                                           
+                                           mappedModel = [self.ponsomizer mapResource:model.responseData];
+                                           
+                                           NSLog(@"PONSOMIZED: %@", mappedModel.copyright);
+                                           
                                            block(mappedModel, nil);
                                        }
                                        else {
+                                           
                                            block(nil, error);
                                        }
                                    }];

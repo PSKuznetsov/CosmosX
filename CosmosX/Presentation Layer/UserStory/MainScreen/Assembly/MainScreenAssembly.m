@@ -27,6 +27,8 @@
                                                     with:[self presenterMainScreenModule]];
                               [definition injectProperty:@selector(moduleInput)
                                                     with:[self presenterMainScreenModule]];
+                              [definition injectProperty:@selector(displayDataManager)
+                                                    with:[self displayDataManager]];
                           }];
 }
 
@@ -81,7 +83,11 @@
 }
 
 - (CollectionViewDataSource *)collectionViewDataSource {
-    return [TyphoonDefinition withClass:[CollectionViewDataSource class]];
+    return [TyphoonDefinition withClass:[CollectionViewDataSource class]
+            configuration:^(TyphoonDefinition *definition) {
+                [definition injectProperty:@selector(dataStore)
+                                      with:[self.services dataStoreService]];
+            }];
 }
 
 @end
