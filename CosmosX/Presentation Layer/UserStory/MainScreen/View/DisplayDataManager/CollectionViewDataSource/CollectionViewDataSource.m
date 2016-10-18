@@ -9,39 +9,39 @@
 #import <AFNetworking/UIImageView+AFNetworking.h>
 
 #import "CollectionViewDataSource.h"
-#import "APODCollectionViewCell.h"
-#import "PONSOModel.h"
+#import "APODPictureEventCollectionViewCell.h"
+#import "APODVideoEventCollectionViewCell.h"
 
-static NSString *const kCollectionViewCellIdentifier = @"kAPODPictureReuseIdentifier";
+#import "PONSOModel.h"
+#import "Constants.h"
 
 @implementation CollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 
-    return [self.dataStore countOfModels];
+    return [self.dataStore count];
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    APODCollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCollectionViewCellIdentifier
-                                                                              forIndexPath:indexPath];
-    
-    PONSOModel* model = [self.dataStore retrieveModelForID:indexPath.row];
-    NSURL* imageURL = [NSURL URLWithString:model.url];
-    NSLog(@"Image URL: %@", imageURL);
-    NSURLRequest *imageRequest = [NSURLRequest requestWithURL:imageURL
-                                                  cachePolicy:NSURLRequestReturnCacheDataElseLoad
-                                              timeoutInterval:60];
-    
-    [cell.imageView setImageWithURLRequest:imageRequest
-                          placeholderImage:[UIImage imageNamed:@"Placeholder"]
-                                   success:nil
-                                   failure:nil];
-    
-    cell.podTitle.text = model.title;
-    NSLog(@"Title: %@", cell.podTitle.text);
+    PONSOModel* model = [self.delegate obtainModelForObjectID:indexPath.row];
     NSLog(@"Hello!");
-    return cell;
+    if ([model.media_type isEqualToString:kMediaTypeImage]) {
+        
+       APODPictureEventCollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:kPictureEventCollectionViewCellIdentifier
+                                                                                             forIndexPath:indexPath];
+        [cell configureCellWithModelObject:model];
+        
+        return cell;
+    }
+    else if ([model.media_type isEqualToString:kMediaTypeVideo]) {
+        
+        APODVideoEventCollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:kVideoEventCollectionViewCellIdentifier
+                                                                                           forIndexPath:indexPath];
+        [cell configureCellWithModelObject:model];
+        return cell;
+    }
+    return nil;
 }
 
 @end

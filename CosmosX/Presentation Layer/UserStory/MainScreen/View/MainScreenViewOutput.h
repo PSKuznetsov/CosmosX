@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class PONSOModel;
+
 @protocol MainScreenViewOutput <NSObject>
 
 /**
@@ -15,6 +17,7 @@
 
  Метод сообщает презентеру о том, что view готова к работе
  */
-- (void)didTriggerViewReadyEvent;
+- (void)didTriggerViewReadyEventWithTodayDate;
+- (PONSOModel *)requestModelForObjectID:(NSInteger)identifier;
 
 @end

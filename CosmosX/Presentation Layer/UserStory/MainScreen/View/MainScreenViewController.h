@@ -10,13 +10,14 @@
 
 #import "MainScreenViewInput.h"
 #import "DisplayDataManagerDelegate.h"
+#import "CollectionViewDataProviderDelegate.h"
 
 @protocol MainScreenViewOutput;
 @protocol DisplayDataManagerProtocol;
 
 @class PostCollectionViewFlowLayout;
 
-@interface MainScreenViewController : UIViewController <MainScreenViewInput, DisplayDataManagerDelegate>
+@interface MainScreenViewController : UIViewController <MainScreenViewInput, DisplayDataManagerDelegate, CollectionViewDataProviderDelegate>
 
 #pragma mark - Dependencies
 

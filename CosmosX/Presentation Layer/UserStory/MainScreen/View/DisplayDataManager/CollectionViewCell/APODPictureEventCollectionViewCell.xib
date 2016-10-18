@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="APODPictureEventCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="517"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="517"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qOp-Uv-b0e" userLabel="CurrentDateView">
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="October 18" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8F-3c-J9X">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="L5q-VZ-Suc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="y8F-3c-J9X" firstAttribute="top" secondItem="qOp-Uv-b0e" secondAttribute="top" constant="30" id="XgS-Ma-exh"/>
+                            <constraint firstAttribute="height" constant="80" id="gUw-vH-5gG"/>
+                            <constraint firstItem="y8F-3c-J9X" firstAttribute="leading" secondItem="qOp-Uv-b0e" secondAttribute="leading" id="gYl-Ne-TP3"/>
+                            <constraint firstAttribute="trailing" secondItem="y8F-3c-J9X" secondAttribute="trailing" id="i2L-XH-Ql4"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAe-8T-d2F" userLabel="ExplanationView">
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kiu-4K-7cN">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Antlia Cluster of Galaxies" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeJ-Un-lVg">
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="eeJ-Un-lVg" firstAttribute="leading" secondItem="Kiu-4K-7cN" secondAttribute="leading" constant="16" id="3zs-Kd-lqm"/>
+                                    <constraint firstAttribute="bottom" secondItem="eeJ-Un-lVg" secondAttribute="bottom" constant="8" id="Qwt-Mx-voe"/>
+                                    <constraint firstItem="eeJ-Un-lVg" firstAttribute="top" secondItem="Kiu-4K-7cN" secondAttribute="top" constant="8" id="Vjz-dj-0Rq"/>
+                                    <constraint firstAttribute="trailing" secondItem="eeJ-Un-lVg" secondAttribute="trailing" constant="16" id="stQ-8V-97J"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Kiu-4K-7cN" secondAttribute="trailing" id="FKG-Iy-ncW"/>
+                            <constraint firstAttribute="height" constant="160" id="N6T-yG-pt6"/>
+                            <constraint firstItem="Kiu-4K-7cN" firstAttribute="leading" secondItem="dAe-8T-d2F" secondAttribute="leading" id="npx-xJ-adq"/>
+                            <constraint firstItem="Kiu-4K-7cN" firstAttribute="centerY" secondItem="dAe-8T-d2F" secondAttribute="centerY" id="y06-V3-kY4"/>
+                        </constraints>
+                    </view>
+                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lKd-t1-qzD"/>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qOp-Uv-b0e" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="32y-JJ-uGc"/>
+                <constraint firstItem="dAe-8T-d2F" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ALn-Z3-IPG"/>
+                <constraint firstAttribute="trailing" secondItem="qOp-Uv-b0e" secondAttribute="trailing" id="AiH-V4-6oo"/>
+                <constraint firstItem="lKd-t1-qzD" firstAttribute="top" secondItem="qOp-Uv-b0e" secondAttribute="bottom" constant="8" id="B0J-Nh-TlO"/>
+                <constraint firstAttribute="trailing" secondItem="lKd-t1-qzD" secondAttribute="trailing" constant="8" id="KNd-Fq-IXU"/>
+                <constraint firstItem="qOp-Uv-b0e" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="TIQ-he-9rD"/>
+                <constraint firstAttribute="trailing" secondItem="dAe-8T-d2F" secondAttribute="trailing" id="hq0-hg-yHF"/>
+                <constraint firstItem="lKd-t1-qzD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="iU5-gd-4gc"/>
+                <constraint firstAttribute="bottom" secondItem="dAe-8T-d2F" secondAttribute="bottom" id="w8A-WC-T8c"/>
+                <constraint firstItem="dAe-8T-d2F" firstAttribute="top" secondItem="lKd-t1-qzD" secondAttribute="bottom" constant="8" id="wwv-Y4-pGU"/>
+            </constraints>
+            <size key="customSize" width="375" height="517"/>
+            <connections>
+                <outlet property="dateLabel" destination="y8F-3c-J9X" id="xGF-7A-Urd"/>
+                <outlet property="imageView" destination="lKd-t1-qzD" id="Ang-a7-Udu"/>
+                <outlet property="titleLabel" destination="eeJ-Un-lVg" id="Qxd-Uk-18W"/>
+            </connections>
+            <point key="canvasLocation" x="112.5" y="373.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

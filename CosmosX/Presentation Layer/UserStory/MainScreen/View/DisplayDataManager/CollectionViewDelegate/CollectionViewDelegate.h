@@ -13,7 +13,7 @@
 
 @interface CollectionViewDelegate : NSObject <NSObject, UICollectionViewDelegate>
 
-@property (nonatomic, strong) id<DisplayDataManagerDelegate> userEventDelegate;
+@property (nonatomic, weak) id<DisplayDataManagerDelegate> userEventDelegate;
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath;
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath;

@@ -22,11 +22,15 @@
 
 #pragma mark - MainScreenViewOutput
 
-- (void)didTriggerViewReadyEvent {
+- (void)didTriggerViewReadyEventWithTodayDate {
 	[self.view setupInitialState];
-    
-    [self.interactor retrieveUpToDateAPOD];
+    [self.interactor initialSetup];
 }
+
+- (PONSOModel *)requestModelForObjectID:(NSInteger)identifier {
+    
+}
+
 
 - (void)updateMainView {
     [self.view updateView];

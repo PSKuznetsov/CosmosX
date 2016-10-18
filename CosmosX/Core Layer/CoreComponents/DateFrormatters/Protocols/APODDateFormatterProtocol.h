@@ -10,4 +10,8 @@
 
 @protocol APODDateFormatterProtocol <NSObject>
 - (NSString *)formateDateForRequest:(NSDate *)date;
+- (NSDate *)formatDateForTimeZone:(NSDate *)date;
+- (NSDate *)originDate;
+- (NSDate *)dateForIndex:(NSInteger)index;
+
 @end

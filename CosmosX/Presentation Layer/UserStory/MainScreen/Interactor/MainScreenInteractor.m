@@ -15,13 +15,24 @@
 
 #pragma mark - MainScreenInteractorInput
 
-- (void)retrieveUpToDateAPOD {
+- (void)initialSetup {
+    
+}
+
+- (PONSOModel *)retrieveDataForObjectID:(NSInteger)identifier {
+    
+    
+}
+
+- (void)retrieveDataForDate:(NSDate *)date {
+    
+    [self.dataStore modelForDate:date
+             withCompletionBlock:^(PONSOModel *model, NSError *error) {
+        
+    }];
     
     __weak typeof(self) weakSelf = self;
-    NSDate* today = [NSDate date];
-    //NSDate* yesterday = [today dateByAddingTimeInterval: -86400.0];
-    
-    [self.networkDataRequest requestDataFromDate:today
+    [self.networkDataRequest requestDataFromDate:date
                                           completion:^(PONSOModel *model, NSError *error) {
                                               
                                               __strong typeof(self) strongSelf = weakSelf;

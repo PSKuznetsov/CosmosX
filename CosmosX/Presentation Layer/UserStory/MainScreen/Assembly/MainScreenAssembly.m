@@ -16,6 +16,8 @@
 #import "CollectionViewDataSource.h"
 #import "DisplayDataManager.h"
 #import "PostCollectionViewFlowLayout.h"
+#import "PostSizeCalculator.h"
+#import "CollectionViewDataProviderDelegate.h"
 
 #import <ViperMcFlurry/ViperMcFlurry.h>
 
@@ -88,13 +90,23 @@
 - (CollectionViewDataSource *)collectionViewDataSource {
     return [TyphoonDefinition withClass:[CollectionViewDataSource class]
             configuration:^(TyphoonDefinition *definition) {
+                [definition injectProperty:@selector(delegate)
+                                      with:[self viewMainScreenModule]];
                 [definition injectProperty:@selector(dataStore)
                                       with:[self.services dataStoreService]];
             }];
 }
 
 - (PostCollectionViewFlowLayout *)collectionViewFlowLayout {
-    return [TyphoonDefinition withClass:[PostCollectionViewFlowLayout class]];
+    return [TyphoonDefinition withClass:[PostCollectionViewFlowLayout class]
+            configuration:^(TyphoonDefinition *definition) {
+                [definition injectProperty:@selector(calculator)
+                                      with:[self postSizeCalculator]];
+            }];
+}
+
+- (PostSizeCalculator *)postSizeCalculator {
+    return [TyphoonDefinition withClass:[PostSizeCalculator class]];
 }
 
 @end

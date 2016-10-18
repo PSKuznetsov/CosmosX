@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-#import "PONSOModel.h"
+@class PONSOModel;
 
 @protocol MainScreenInteractorInput <NSObject>
 
-- (void)retrieveUpToDateAPOD;
+- (void)initialSetup;
+- (PONSOModel *)retrieveDataForObjectID:(NSInteger)identifier;
 
 @end

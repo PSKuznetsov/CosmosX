@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Typhoon.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -44,10 +49,15 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>youtube-ios-player-helper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>24C0B43F5F802213E394A33101A9F24E</key>
+		<key>2468CF9945DBF695DA63BE90808E9914</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,12 +72,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>60279946E9343D2721B1651E86997281</key>
+		<key>4C6A7AB62EB7E78F6641E763C4DB77E2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8F8B42573F7193BFAB54C001EA59B46F</key>
+		<key>52AF7A610C84F9557478AAF0C5BBA4B3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>768C6F495FD1C112470D54454E82133F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,7 +97,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BDEE6E11261FFB6146752992CD19D959</key>
+		<key>F8AD92DD409C08046EB076A330E382FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FCD831DDCDE3285FBE190838AD08AA40</key>
 		<dict>
 			<key>primary</key>
 			<true/>

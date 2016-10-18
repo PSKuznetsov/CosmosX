@@ -8,9 +8,6 @@
 
 #import "DisplayDataManager.h"
 
-static NSString *const kAPODCellReuseIdentifier = @"kAPODPictureReuseIdentifier";
-
-
 @implementation DisplayDataManager
 
 - (id <UICollectionViewDataSource>)dataSourceForCollectionVIew {

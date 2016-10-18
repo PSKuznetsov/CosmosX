@@ -29,6 +29,8 @@
             configuration:^(TyphoonDefinition *definition) {
                 [definition injectProperty:@selector(adapter)
                                       with:[self.coreComponent modelAdapter]];
+                [definition injectProperty:@selector(dateFormatter)
+                                      with:[self.coreComponent requestDateFormatter]];
             }];
 }
 

@@ -41,9 +41,11 @@
     }
 }
 
-- (void)modelForDate:(NSString *)date withCompletionBlock:(void(^)(PONSOModel* model, NSError* error))block {
+- (void)modelForDate:(NSDate *)date withCompletionBlock:(void(^)(PONSOModel* model, NSError* error))block {
     
-    NSPredicate* predicate = [NSPredicate predicateWithFormat:@"date = %@", date];
+    NSString* formatDate = [self.dateFormatter formateDateForRequest:date];
+    NSPredicate* predicate = [NSPredicate predicateWithFormat:@"date = %@", formatDate];
+    
     APODData* requestedModel = [[APODData objectsWithPredicate:predicate]firstObject];
     
     if (block) {
@@ -59,18 +61,69 @@
     
 }
 
+- (PONSOModel *)modelForDate:(NSDate *)date {
+    
+    NSString* formatDate = [self.dateFormatter formateDateForRequest:date];
+    NSPredicate* predicate = [NSPredicate predicateWithFormat:@"date = %@", formatDate];
+    
+    APODData* requestedModel = [[APODData objectsWithPredicate:predicate]firstObject];
+        if (requestedModel) {
+            PONSOModel* model = [self.adapter adaptModel:requestedModel forType:PONSOModelType];
+            return model;
+        }
+        else {
+            return nil;
+        }
+}
+
 - (PONSOModel *)retrieveModelForID:(NSInteger)identifier {
     
-    RLMResults* results = [[APODData allObjects] sortedResultsUsingProperty:@"date" ascending:NO];
-    APODData* requestedModel = [results objectAtIndex:identifier];
-    PONSOModel* model = [self.adapter adaptModel:requestedModel forType:PONSOModelType];
+//    RLMResults* results = [[APODData allObjects] sortedResultsUsingProperty:@"date" ascending:NO];
+//    if (results.count < identifier) {
+//        APODData* requestedModel = [results objectAtIndex:identifier];
+//        PONSOModel* model = [self.adapter adaptModel:requestedModel forType:PONSOModelType];
+//        
+//        return model;
+//    }
     
-    return model;
+    NSDate* date = [self.dateFormatter dateForIndex:identifier];
+    return [self modelForDate:date];
 }
 
 - (NSInteger)countOfModels {
+    
     NSInteger modelsCount = [[APODData allObjects]count];
+    
     return modelsCount;
+}
+
+- (NSInteger)count {
+    
+    NSDate* today = [self.dateFormatter formatDateForTimeZone:[NSDate date]];
+    NSDate* originDate = [self.dateFormatter originDate];
+    
+    NSInteger count = [self daysBetweenDate:today andDate:originDate];
+    NSLog(@"DAYS COUNT: %d", count);
+    
+    return count;
+}
+
+- (NSInteger)daysBetweenDate:(NSDate*)fromDateTime andDate:(NSDate*)toDateTime
+{
+    NSDate *fromDate;
+    NSDate *toDate;
+    
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    
+    [calendar rangeOfUnit:NSCalendarUnitDay startDate:&fromDate
+                 interval:NULL forDate:fromDateTime];
+    [calendar rangeOfUnit:NSCalendarUnitDay startDate:&toDate
+                 interval:NULL forDate:toDateTime];
+    
+    NSDateComponents *difference = [calendar components:NSCalendarUnitDay
+                                               fromDate:fromDate toDate:toDate options:0];
+    
+    return [difference day];
 }
 
 @end

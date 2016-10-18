@@ -9,18 +9,21 @@
 #import <Foundation/Foundation.h>
 #import "DataStoreProtocol.h"
 #import "ModelAdapterProtocol.h"
+#import "APODDateFormatterProtocol.h"
 
 @interface APODDataStoreService : NSObject <DataStoreProtocol>
 
 #pragma mark - Dependecies
 
 @property (nonatomic, strong) id<ModelAdapterProtocol> adapter;
+@property (nonatomic, strong) id<APODDateFormatterProtocol> dateFormatter;
 
 #pragma mark - DataStoreProtocol
 
 - (void)storeModel:(PONSOModel *)model withCompletionBlock:(void(^)(NSError* error))block;
-- (void)modelForDate:(NSString *)date  withCompletionBlock:(void(^)(PONSOModel* model, NSError* error))block;
+- (void)modelForDate:(NSDate *)date  withCompletionBlock:(void(^)(PONSOModel* model, NSError* error))block;
 - (PONSOModel *)retrieveModelForID:(NSInteger)identifier;
 - (NSInteger)countOfModels;
+- (NSInteger)count;
 
 @end

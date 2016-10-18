@@ -7,9 +7,11 @@ target 'CosmosX' do
 
   # Pods for CosmosX
   pod 'AFNetworking', '~> 3.0'
+  pod "youtube-ios-player-helper", "~> 0.1.4"
   pod 'Typhoon'
   pod 'OCMock'
   pod 'Realm'
+  pod 'SDWebImage'
   pod "ViperMcFlurry"
 
   target 'CosmosXTests' do

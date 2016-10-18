@@ -13,6 +13,11 @@
 #import "DisplayDataManagerDelegate.h"
 #import "PostCollectionViewFlowLayout.h"
 
+#import "APODVideoEventCollectionViewCell.h"
+#import "APODPictureEventCollectionViewCell.h"
+
+#import "Constants.h"
+
 @implementation MainScreenViewController
 
 #pragma mark - Lifecycle Methods
@@ -20,11 +25,12 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
     
-	[self.output didTriggerViewReadyEvent];
+	[self.output didTriggerViewReadyEventWithTodayDate];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
     self.navigationController.navigationBar.hidden = YES;
 }
 
@@ -32,9 +38,18 @@
 
 - (void)setupInitialState {
     
+    [self.collectionView registerNib:[UINib nibWithNibName:kVideoEventNib bundle:nil]
+          forCellWithReuseIdentifier:kVideoEventCollectionViewCellIdentifier];
+    
+    [self.collectionView registerNib:[UINib nibWithNibName:kPictureEventNib bundle:nil]
+          forCellWithReuseIdentifier:kPictureEventCollectionViewCellIdentifier];
+    
     self.collectionView.collectionViewLayout = self.flowLayout;
     self.collectionView.delegate   = [self.displayDataManager delegateForCollectionView];
     self.collectionView.dataSource = [self.displayDataManager dataSourceForCollectionVIew];
+    
+    
+    
     NSLog(@"Loading...");
 }
 
@@ -49,5 +64,12 @@
 - (void)didTapPostInCollectionViewWithImageContent:(NSObject *)imageContent {
     
 }
+
+#pragma mark - CollectionViewDataProviderDelegate
+
+- (PONSOModel *)obtainModelForObjectID:(NSInteger)identifier {
+    
+}
+
 
 @end

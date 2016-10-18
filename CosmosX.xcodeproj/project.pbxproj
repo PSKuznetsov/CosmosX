@@ -22,13 +22,15 @@
 		F3ED0E811FB67F343416DA03 /* MainScreenPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC15FB04F3006C323BA7F44 /* MainScreenPresenterTests.m */; };
 		FA068F0B1DAB6A9100957582 /* CosmosXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA068F0A1DAB6A9100957582 /* CosmosXTests.m */; };
 		FA068F161DAB6A9100957582 /* CosmosXUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA068F151DAB6A9100957582 /* CosmosXUITests.m */; };
+		FA09C46E1DB6B61500D18455 /* APODVideoEventCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA09C46C1DB6B61500D18455 /* APODVideoEventCollectionViewCell.m */; };
+		FA09C46F1DB6B61500D18455 /* APODVideoEventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA09C46D1DB6B61500D18455 /* APODVideoEventCollectionViewCell.xib */; };
+		FA09C4741DB6B7EC00D18455 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = FA09C4731DB6B7EC00D18455 /* Constants.m */; };
 		FA0EAE1A1DABFD8000650807 /* PONSOMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0EAE191DABFD8000650807 /* PONSOMapper.m */; };
 		FA0EAE2A1DAC056F00650807 /* NetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0EAE291DAC056F00650807 /* NetworkClient.m */; };
 		FA0EAE2F1DAC062D00650807 /* ResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0EAE2E1DAC062D00650807 /* ResponseModel.m */; };
 		FA330B541DAB96BE007BF47C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7CFF341DAB90EA001B3C27 /* Assets.xcassets */; };
 		FA330B551DAB96BE007BF47C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7CFF351DAB90EA001B3C27 /* LaunchScreen.storyboard */; };
 		FA330B561DAB96BE007BF47C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7CFF371DAB90EA001B3C27 /* Main.storyboard */; };
-		FA330B671DAB9E27007BF47C /* APODCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA330B5A1DAB9E27007BF47C /* APODCollectionViewCell.m */; };
 		FA330B681DAB9E27007BF47C /* PostSizeCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA330B601DAB9E27007BF47C /* PostSizeCalculator.m */; };
 		FA330B691DAB9E27007BF47C /* PostCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FA330B621DAB9E27007BF47C /* PostCollectionViewFlowLayout.m */; };
 		FA330B6A1DAB9E27007BF47C /* DisplayDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA330B641DAB9E27007BF47C /* DisplayDataManager.m */; };
@@ -38,6 +40,8 @@
 		FA7CFF3B1DAB90EA001B3C27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7CFF321DAB90EA001B3C27 /* main.m */; };
 		FA94B2AA1DAD074F001EEAA2 /* RequestDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA94B2A91DAD074F001EEAA2 /* RequestDateFormatter.m */; };
 		FA94B2B31DAD0A18001EEAA2 /* APODDataRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = FA94B2B21DAD0A18001EEAA2 /* APODDataRequestService.m */; };
+		FACE77141DB699480047312B /* APODPictureEventCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FACE77121DB699480047312B /* APODPictureEventCollectionViewCell.m */; };
+		FACE77151DB699480047312B /* APODPictureEventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACE77131DB699480047312B /* APODPictureEventCollectionViewCell.xib */; };
 		FAD9B3E71DAD198000069752 /* PONSOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9B3E61DAD198000069752 /* PONSOModel.m */; };
 		FAD9B3EB1DAD343400069752 /* CoreComponentsAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9B3EA1DAD343400069752 /* CoreComponentsAssembly.m */; };
 		FAD9B3EE1DAD377A00069752 /* ServicesAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9B3ED1DAD377A00069752 /* ServicesAssembly.m */; };
@@ -104,6 +108,11 @@
 		FA068F111DAB6A9100957582 /* CosmosXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CosmosXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA068F151DAB6A9100957582 /* CosmosXUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CosmosXUITests.m; sourceTree = "<group>"; };
 		FA068F171DAB6A9100957582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA09C46B1DB6B61500D18455 /* APODVideoEventCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APODVideoEventCollectionViewCell.h; sourceTree = "<group>"; };
+		FA09C46C1DB6B61500D18455 /* APODVideoEventCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APODVideoEventCollectionViewCell.m; sourceTree = "<group>"; };
+		FA09C46D1DB6B61500D18455 /* APODVideoEventCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APODVideoEventCollectionViewCell.xib; sourceTree = "<group>"; };
+		FA09C4721DB6B7EC00D18455 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		FA09C4731DB6B7EC00D18455 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		FA0EAE151DABFD0200650807 /* ResourceMapperProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceMapperProtocol.h; sourceTree = "<group>"; };
 		FA0EAE181DABFD8000650807 /* PONSOMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PONSOMapper.h; sourceTree = "<group>"; };
 		FA0EAE191DABFD8000650807 /* PONSOMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PONSOMapper.m; sourceTree = "<group>"; };
@@ -113,8 +122,6 @@
 		FA0EAE291DAC056F00650807 /* NetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkClient.m; sourceTree = "<group>"; };
 		FA0EAE2D1DAC062D00650807 /* ResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseModel.h; sourceTree = "<group>"; };
 		FA0EAE2E1DAC062D00650807 /* ResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseModel.m; sourceTree = "<group>"; };
-		FA330B591DAB9E27007BF47C /* APODCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APODCollectionViewCell.h; sourceTree = "<group>"; };
-		FA330B5A1DAB9E27007BF47C /* APODCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APODCollectionViewCell.m; sourceTree = "<group>"; };
 		FA330B5F1DAB9E27007BF47C /* PostSizeCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostSizeCalculator.h; sourceTree = "<group>"; };
 		FA330B601DAB9E27007BF47C /* PostSizeCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostSizeCalculator.m; sourceTree = "<group>"; };
 		FA330B611DAB9E27007BF47C /* PostCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCollectionViewFlowLayout.h; sourceTree = "<group>"; };
@@ -139,6 +146,9 @@
 		FA94B2B11DAD0A18001EEAA2 /* APODDataRequestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APODDataRequestService.h; sourceTree = "<group>"; };
 		FA94B2B21DAD0A18001EEAA2 /* APODDataRequestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APODDataRequestService.m; sourceTree = "<group>"; };
 		FA94B2B41DAD0A35001EEAA2 /* DataRequestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataRequestProtocol.h; sourceTree = "<group>"; };
+		FACE77111DB699480047312B /* APODPictureEventCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APODPictureEventCollectionViewCell.h; path = ../APODPictureEventCollectionViewCell.h; sourceTree = "<group>"; };
+		FACE77121DB699480047312B /* APODPictureEventCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APODPictureEventCollectionViewCell.m; path = ../APODPictureEventCollectionViewCell.m; sourceTree = "<group>"; };
+		FACE77131DB699480047312B /* APODPictureEventCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = APODPictureEventCollectionViewCell.xib; path = ../APODPictureEventCollectionViewCell.xib; sourceTree = "<group>"; };
 		FAD9B3E51DAD198000069752 /* PONSOModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PONSOModel.h; sourceTree = "<group>"; };
 		FAD9B3E61DAD198000069752 /* PONSOModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PONSOModel.m; sourceTree = "<group>"; };
 		FAD9B3E91DAD343400069752 /* CoreComponentsAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreComponentsAssembly.h; sourceTree = "<group>"; };
@@ -153,6 +163,7 @@
 		FAD9B3FD1DAD478500069752 /* ModelAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelAdapterProtocol.h; sourceTree = "<group>"; };
 		FAD9B3FE1DAD479A00069752 /* StoreModelAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreModelAdapter.h; sourceTree = "<group>"; };
 		FAD9B3FF1DAD479A00069752 /* StoreModelAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreModelAdapter.m; sourceTree = "<group>"; };
+		FAEDBB321DB6E0B6002A2951 /* CollectionViewDataProviderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewDataProviderDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -393,6 +404,43 @@
 			path = CosmosXUITests;
 			sourceTree = "<group>";
 		};
+		FA09C4691DB6B5DD00D18455 /* PictureEventCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FACE77111DB699480047312B /* APODPictureEventCollectionViewCell.h */,
+				FACE77121DB699480047312B /* APODPictureEventCollectionViewCell.m */,
+				FACE77131DB699480047312B /* APODPictureEventCollectionViewCell.xib */,
+			);
+			path = PictureEventCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		FA09C46A1DB6B5DD00D18455 /* VideoEventCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FA09C46B1DB6B61500D18455 /* APODVideoEventCollectionViewCell.h */,
+				FA09C46C1DB6B61500D18455 /* APODVideoEventCollectionViewCell.m */,
+				FA09C46D1DB6B61500D18455 /* APODVideoEventCollectionViewCell.xib */,
+			);
+			path = VideoEventCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		FA09C4701DB6B7B900D18455 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FA09C4711DB6B7B900D18455 /* Constants */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FA09C4711DB6B7B900D18455 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FA09C4721DB6B7EC00D18455 /* Constants.h */,
+				FA09C4731DB6B7EC00D18455 /* Constants.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		FA0EAE0E1DABFA4500650807 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -524,7 +572,8 @@
 		FA330B571DAB9E27007BF47C /* DisplayDataManager */ = {
 			isa = PBXGroup;
 			children = (
-				FA330B581DAB9E27007BF47C /* CollectionViewCell */,
+				FA09C4701DB6B7B900D18455 /* Common */,
+				FA330B581DAB9E27007BF47C /* CollectionViewCells */,
 				FA330B5B1DAB9E27007BF47C /* CollectionViewDataSource */,
 				FA330B5C1DAB9E27007BF47C /* CollectionViewDelegate */,
 				FA330B5D1DAB9E27007BF47C /* CollectionViewFlowLayout */,
@@ -536,18 +585,20 @@
 			path = DisplayDataManager;
 			sourceTree = "<group>";
 		};
-		FA330B581DAB9E27007BF47C /* CollectionViewCell */ = {
+		FA330B581DAB9E27007BF47C /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				FA330B591DAB9E27007BF47C /* APODCollectionViewCell.h */,
-				FA330B5A1DAB9E27007BF47C /* APODCollectionViewCell.m */,
+				FA09C4691DB6B5DD00D18455 /* PictureEventCollectionViewCell */,
+				FA09C46A1DB6B5DD00D18455 /* VideoEventCollectionViewCell */,
 			);
+			name = CollectionViewCells;
 			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 		FA330B5B1DAB9E27007BF47C /* CollectionViewDataSource */ = {
 			isa = PBXGroup;
 			children = (
+				FAEDBB311DB6E087002A2951 /* Protocols */,
 				FA330B6B1DAB9E8F007BF47C /* CollectionViewDataSource.h */,
 				FA330B6C1DAB9E8F007BF47C /* CollectionViewDataSource.m */,
 			);
@@ -767,6 +818,14 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		FAEDBB311DB6E087002A2951 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FAEDBB321DB6E0B6002A2951 /* CollectionViewDataProviderDelegate.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -885,6 +944,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA330B541DAB96BE007BF47C /* Assets.xcassets in Resources */,
+				FACE77151DB699480047312B /* APODPictureEventCollectionViewCell.xib in Resources */,
+				FA09C46F1DB6B61500D18455 /* APODVideoEventCollectionViewCell.xib in Resources */,
 				FA330B551DAB96BE007BF47C /* LaunchScreen.storyboard in Resources */,
 				FA330B561DAB96BE007BF47C /* Main.storyboard in Resources */,
 			);
@@ -1035,12 +1096,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD9B3E71DAD198000069752 /* PONSOModel.m in Sources */,
+				FACE77141DB699480047312B /* APODPictureEventCollectionViewCell.m in Sources */,
 				FA0EAE2A1DAC056F00650807 /* NetworkClient.m in Sources */,
 				FAD9B3F91DAD41C400069752 /* APODData.m in Sources */,
-				FA330B671DAB9E27007BF47C /* APODCollectionViewCell.m in Sources */,
 				FAD9B3F51DAD3E8D00069752 /* APODDataStoreService.m in Sources */,
 				FAD9B4001DAD479A00069752 /* StoreModelAdapter.m in Sources */,
 				FA7CFF3A1DAB90EA001B3C27 /* AppDelegate.m in Sources */,
+				FA09C4741DB6B7EC00D18455 /* Constants.m in Sources */,
 				FA330B691DAB9E27007BF47C /* PostCollectionViewFlowLayout.m in Sources */,
 				FA7CFF3B1DAB90EA001B3C27 /* main.m in Sources */,
 				FA94B2B31DAD0A18001EEAA2 /* APODDataRequestService.m in Sources */,
@@ -1057,6 +1119,7 @@
 				09AC032861EF6A6CC3221271 /* MainScreenInteractor.m in Sources */,
 				FA94B2AA1DAD074F001EEAA2 /* RequestDateFormatter.m in Sources */,
 				FAD9B3EB1DAD343400069752 /* CoreComponentsAssembly.m in Sources */,
+				FA09C46E1DB6B61500D18455 /* APODVideoEventCollectionViewCell.m in Sources */,
 				0DB0DBF98F7AE851C4839B0A /* MainScreenRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

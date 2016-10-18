@@ -8,18 +8,49 @@
 
 #import "RequestDateFormatter.h"
 
+@interface RequestDateFormatter ()
+@property (nonatomic, strong) NSDateFormatter* formatter;
+@end
+
+static NSString *const kOriginDate = @"1995-06-16";
+
 @implementation RequestDateFormatter
 
 #pragma mark - APODDateFormatterProtocol
 
 - (NSString *)formateDateForRequest:(NSDate *)date {
     
-    NSDateFormatter* formatter = [[NSDateFormatter alloc]init];
-    [formatter setDateFormat:@"yyyy-MM-dd"];
+    self.formatter = [[NSDateFormatter alloc]init];
+    [self.formatter setTimeZone:[NSTimeZone timeZoneWithName:@"America/New_York"]];
+    [self.formatter setDateFormat:@"yyyy-MM-dd"];
     
-    NSString* dateForRequest = [formatter stringFromDate:date];
+    NSString* dateForRequest = [self.formatter stringFromDate:date];
     NSLog(@"DATA FOR REQUEST: %@", dateForRequest);
     return dateForRequest;
+}
+
+- (NSDate *)formatDateForTimeZone:(NSDate *)date {
+    
+    NSString* formattedDateString = [self formateDateForRequest:date];
+    NSDate* formattedDate = [self.formatter dateFromString:formattedDateString];
+    
+    return formattedDate;
+}
+
+- (NSDate *)originDate {
+    
+    NSDate* formattedDate = [self.formatter dateFromString:kOriginDate];
+    
+    return formattedDate;
+}
+
+- (NSDate *)dateForIndex:(NSInteger)index {
+    NSDate* currentDate = [self formatDateForTimeZone:[NSDate date]];
+    NSDate *pastDate = [[NSCalendar currentCalendar] dateByAddingUnit:NSCalendarUnitDay
+                                                                    value:-index
+                                                                   toDate:currentDate
+                                                                  options:0];
+    return pastDate;
 }
 
 @end
