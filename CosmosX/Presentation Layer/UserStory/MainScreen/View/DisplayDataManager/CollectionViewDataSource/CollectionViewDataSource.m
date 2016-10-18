@@ -27,21 +27,20 @@ static NSString *const kCollectionViewCellIdentifier = @"kAPODPictureReuseIdenti
                                                                               forIndexPath:indexPath];
     
     PONSOModel* model = [self.dataStore retrieveModelForID:indexPath.row];
-    NSLog(@"PONSO URL: %@", model.url);
     NSURL* imageURL = [NSURL URLWithString:model.url];
-    NSLog(@"URL: %@", imageURL);
-    
+    NSLog(@"Image URL: %@", imageURL);
     NSURLRequest *imageRequest = [NSURLRequest requestWithURL:imageURL
                                                   cachePolicy:NSURLRequestReturnCacheDataElseLoad
                                               timeoutInterval:60];
     
     [cell.imageView setImageWithURLRequest:imageRequest
-                          placeholderImage:[UIImage imageNamed:@"placeholder"]
+                          placeholderImage:[UIImage imageNamed:@"Placeholder"]
                                    success:nil
                                    failure:nil];
     
     cell.podTitle.text = model.title;
-    NSLog(@"Hi, there!");
+    NSLog(@"Title: %@", cell.podTitle.text);
+    NSLog(@"Hello!");
     return cell;
 }
 

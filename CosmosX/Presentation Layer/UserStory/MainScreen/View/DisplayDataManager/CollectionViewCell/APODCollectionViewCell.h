@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface APODCollectionViewCell : UICollectionViewCell
+
 @property (nonatomic, weak) IBOutlet UIImageView * imageView;
 @property (nonatomic, weak) IBOutlet UILabel * podTitle;
 @end

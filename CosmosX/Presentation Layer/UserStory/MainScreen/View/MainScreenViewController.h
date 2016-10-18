@@ -14,12 +14,15 @@
 @protocol MainScreenViewOutput;
 @protocol DisplayDataManagerProtocol;
 
+@class PostCollectionViewFlowLayout;
+
 @interface MainScreenViewController : UIViewController <MainScreenViewInput, DisplayDataManagerDelegate>
 
 #pragma mark - Dependencies
 
 @property (nonatomic, strong) id<MainScreenViewOutput> output;
 @property (nonatomic, strong) id<DisplayDataManagerProtocol>displayDataManager;
+@property (nonatomic, strong) PostCollectionViewFlowLayout* flowLayout;
 @property (nonatomic, weak) IBOutlet UICollectionView* collectionView;
 
 @end

@@ -11,6 +11,7 @@
 #import "MainScreenViewOutput.h"
 #import "DisplayDataManagerProtocol.h"
 #import "DisplayDataManagerDelegate.h"
+#import "PostCollectionViewFlowLayout.h"
 
 @implementation MainScreenViewController
 
@@ -19,18 +20,27 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
     
-    [self.collectionView setDelegate:[self.displayDataManager delegateForCollectionView]];
-    [self.collectionView setDataSource:[self.displayDataManager dataSourceForCollectionVIew]];
-    
 	[self.output didTriggerViewReadyEvent];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = YES;
 }
 
 #pragma mark - MainScreenViewInput Methods
 
 - (void)setupInitialState {
+    
+    self.collectionView.collectionViewLayout = self.flowLayout;
+    self.collectionView.delegate   = [self.displayDataManager delegateForCollectionView];
+    self.collectionView.dataSource = [self.displayDataManager dataSourceForCollectionVIew];
+    NSLog(@"Loading...");
 }
 
 - (void)updateView {
+    
+    NSLog(@"Reloading View...");
     [self.collectionView reloadData];
 }
 

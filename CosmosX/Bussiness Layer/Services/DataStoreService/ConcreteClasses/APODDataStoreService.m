@@ -63,9 +63,7 @@
     
     RLMResults* results = [[APODData allObjects] sortedResultsUsingProperty:@"date" ascending:NO];
     APODData* requestedModel = [results objectAtIndex:identifier];
-    NSLog(@"REQUESTED: %@", requestedModel);
     PONSOModel* model = [self.adapter adaptModel:requestedModel forType:PONSOModelType];
-    NSLog(@"ADAPTED: %@", model);
     
     return model;
 }

@@ -15,6 +15,7 @@
 #import "CollectionViewDelegate.h"
 #import "CollectionViewDataSource.h"
 #import "DisplayDataManager.h"
+#import "PostCollectionViewFlowLayout.h"
 
 #import <ViperMcFlurry/ViperMcFlurry.h>
 
@@ -29,6 +30,8 @@
                                                     with:[self presenterMainScreenModule]];
                               [definition injectProperty:@selector(displayDataManager)
                                                     with:[self displayDataManager]];
+                              [definition injectProperty:@selector(flowLayout)
+                                                    with:[self collectionViewFlowLayout]];
                           }];
 }
 
@@ -88,6 +91,10 @@
                 [definition injectProperty:@selector(dataStore)
                                       with:[self.services dataStoreService]];
             }];
+}
+
+- (PostCollectionViewFlowLayout *)collectionViewFlowLayout {
+    return [TyphoonDefinition withClass:[PostCollectionViewFlowLayout class]];
 }
 
 @end
