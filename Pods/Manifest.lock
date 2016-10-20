@@ -14,6 +14,46 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - libextobjc (0.4.1):
+    - libextobjc/EXTADT (= 0.4.1)
+    - libextobjc/EXTConcreteProtocol (= 0.4.1)
+    - libextobjc/EXTKeyPathCoding (= 0.4.1)
+    - libextobjc/EXTNil (= 0.4.1)
+    - libextobjc/EXTSafeCategory (= 0.4.1)
+    - libextobjc/EXTScope (= 0.4.1)
+    - libextobjc/EXTSelectorChecking (= 0.4.1)
+    - libextobjc/EXTSynthesize (= 0.4.1)
+    - libextobjc/NSInvocation+EXT (= 0.4.1)
+    - libextobjc/NSMethodSignature+EXT (= 0.4.1)
+    - libextobjc/RuntimeExtensions (= 0.4.1)
+    - libextobjc/UmbrellaHeader (= 0.4.1)
+  - libextobjc/EXTADT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTConcreteProtocol (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTKeyPathCoding (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTNil (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSafeCategory (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTScope (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSelectorChecking (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSynthesize (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/NSInvocation+EXT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/NSMethodSignature+EXT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4.1)
+  - libextobjc/UmbrellaHeader (0.4.1)
+  - Nimbus/Collections (1.3.0):
+    - Nimbus/Core
+  - Nimbus/Core (1.3.0)
+  - Nimbus/Models (1.3.0):
+    - Nimbus/Core
   - OCMock (3.3.1)
   - Realm (2.0.2):
     - Realm/Headers (= 2.0.2)
@@ -29,6 +69,9 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - libextobjc
+  - Nimbus/Collections
+  - Nimbus/Models
   - OCMock
   - Realm
   - SDWebImage
@@ -38,6 +81,8 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
+  Nimbus: e7f33bc6d6cb4fe5ea0aee0c7e0883696123422c
   OCMock: f3f61e6eaa16038c30caa5798c5e49d3307b6f22
   Realm: 0f5a194af0b7e6158b83db41b4ee1a00be7ddf1a
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
@@ -45,6 +90,6 @@ SPEC CHECKSUMS:
   ViperMcFlurry: 7bcae2f2734f9338d245fa7037fc5f983edb3da6
   youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
-PODFILE CHECKSUM: 7aacfb99f8dd71e34cc29546473c83bf9d6056c3
+PODFILE CHECKSUM: 30d4251072784b9c9a1ef362c468e77d9f1ab1fa
 
 COCOAPODS: 1.0.1

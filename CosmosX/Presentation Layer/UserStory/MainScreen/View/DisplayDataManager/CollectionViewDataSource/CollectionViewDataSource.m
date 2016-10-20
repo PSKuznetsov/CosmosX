@@ -19,16 +19,16 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 
-    return [self.dataStore count];
+    return [self.dataProvider count];
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    PONSOModel* model = [self.delegate obtainModelForObjectID:indexPath.row];
-    NSLog(@"Hello!");
+    [self.delegate obtainModelForObjectID:indexPath.row];
+    
     if ([model.media_type isEqualToString:kMediaTypeImage]) {
         
-       APODPictureEventCollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:kPictureEventCollectionViewCellIdentifier
+        APODPictureEventCollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:kPictureEventCollectionViewCellIdentifier
                                                                                              forIndexPath:indexPath];
         [cell configureCellWithModelObject:model];
         

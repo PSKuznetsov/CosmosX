@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Nimbus.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>OCMock.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -49,6 +54,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>libextobjc.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>youtube-ios-player-helper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,7 +67,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2468CF9945DBF695DA63BE90808E9914</key>
+		<key>2AD90CB0520431DCF345C41765D856B8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>49BDA29AFC8A1ED0EFFB8756C78B90DD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,17 +87,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4C6A7AB62EB7E78F6641E763C4DB77E2</key>
+		<key>617FBAA424B80AF00721D14A4585C007</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>52AF7A610C84F9557478AAF0C5BBA4B3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>768C6F495FD1C112470D54454E82133F</key>
+		<key>7E41CA2ECB40C640963734378302229C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,17 +102,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>9B5C9C4BC5067FC1CAEC4BB2DBB00031</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B1183D15BACD8D8DA89B5651E5F1813F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B3DB816778C2E8989A3E5ABDDD5DCAFB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F8AD92DD409C08046EB076A330E382FC</key>
+		<key>BC684807BDA8ACE09921CDFCC49AEA60</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FCD831DDCDE3285FBE190838AD08AA40</key>
+		<key>D571388B02416BD1E4E421978767FC2C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

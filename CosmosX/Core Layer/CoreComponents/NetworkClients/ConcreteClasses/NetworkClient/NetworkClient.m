@@ -31,6 +31,7 @@ static NSString * const baseURL = @"https://api.nasa.gov/planetary/apod";
             NSDictionary* responseDictionary = (NSDictionary *)responseObject;
             ResponseModel* response = [[ResponseModel alloc] initWithDictionary:responseDictionary];
             block(response, nil);
+            
         } failure:^(NSURLSessionTask *operation, NSError *error) {
             
             NSLog(@"Error: %@", error);

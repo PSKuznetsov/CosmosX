@@ -22,20 +22,37 @@
 
 #pragma mark - MainScreenViewOutput
 
-- (void)didTriggerViewReadyEventWithTodayDate {
+- (void)didTriggerViewReadyEvent {
 	[self.view setupInitialState];
     [self.interactor initialSetup];
-}
-
-- (PONSOModel *)requestModelForObjectID:(NSInteger)identifier {
     
+    NSArray* storedEvents = [self.interactor obtainEventList];
+    
+    if (storedEvents.count > 0) {
+        [self updateViewWithEvents:storedEvents];
+    } else {
+        //TODO:Show loading view
+    }
 }
 
-
-- (void)updateMainView {
-    [self.view updateView];
+- (void)didTriggerEventTapEventWithObject:(PONSOModel *)event {
+    //TODO:Open router with object
 }
 
 #pragma mark - MainScreenInteractorOutput
+
+- (void)didUpdateEventsListWithEvents:(NSArray *)events {
+    [self updateViewWithEvents:events];
+}
+
+#pragma mark - MainScreenInteractorInput
+
+
+
+#pragma mark - Private Methods
+
+- (void)updateViewWithEvents:(NSArray *)events {
+    [self.view updateStateWithEventsLits:events];
+}
 
 @end

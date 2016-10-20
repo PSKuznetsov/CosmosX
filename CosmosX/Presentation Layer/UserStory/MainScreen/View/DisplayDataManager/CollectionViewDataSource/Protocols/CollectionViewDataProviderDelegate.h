@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@class PONSOModel;
-
 @protocol CollectionViewDataProviderDelegate <NSObject>
-- (PONSOModel *)obtainModelForObjectID:(NSInteger)identifier;
+
+- (void)obtainModelForObjectID:(NSInteger)identifier;
+
 @end

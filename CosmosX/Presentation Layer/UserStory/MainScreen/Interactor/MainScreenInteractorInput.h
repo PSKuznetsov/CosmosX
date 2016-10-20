@@ -13,6 +13,7 @@
 @protocol MainScreenInteractorInput <NSObject>
 
 - (void)initialSetup;
-- (PONSOModel *)retrieveDataForObjectID:(NSInteger)identifier;
+- (void)updateEventList;
+- (NSArray <PONSOModel *> *)obtainEventList;
 
 @end

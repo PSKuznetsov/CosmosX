@@ -9,6 +9,7 @@
 #import <Typhoon/Typhoon.h>
 #import "CoreComponentsAssembly.h"
 
+@class DataProvider;
 @class APODDataStoreService;
 @class APODDataRequestService;
 
@@ -18,5 +19,6 @@
 
 - (APODDataRequestService *)apodRequestService;
 - (APODDataStoreService *)dataStoreService;
+- (DataProvider *)dataProviderService;
 
 @end

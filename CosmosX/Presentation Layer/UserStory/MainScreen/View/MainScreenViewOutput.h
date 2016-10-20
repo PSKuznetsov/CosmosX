@@ -17,7 +17,7 @@
 
  Метод сообщает презентеру о том, что view готова к работе
  */
-- (void)didTriggerViewReadyEventWithTodayDate;
-- (PONSOModel *)requestModelForObjectID:(NSInteger)identifier;
+- (void)didTriggerViewReadyEvent;
+- (void)didTriggerEventTapEventWithObject:(PONSOModel *)event;
 
 @end

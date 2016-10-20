@@ -25,7 +25,6 @@ static NSString *const kOriginDate = @"1995-06-16";
     [self.formatter setDateFormat:@"yyyy-MM-dd"];
     
     NSString* dateForRequest = [self.formatter stringFromDate:date];
-    NSLog(@"DATA FOR REQUEST: %@", dateForRequest);
     return dateForRequest;
 }
 

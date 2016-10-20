@@ -7,7 +7,7 @@
 //
 
 #import "MainScreenInteractorInput.h"
-#import "DataStoreProtocol.h"
+#import "DataProviderProtocol.h"
 #import "DataRequestProtocol.h"
 
 @protocol MainScreenInteractorOutput;
@@ -18,7 +18,6 @@
 
 #pragma mark - Dependecies
 
-@property (nonatomic, strong) id<DataStoreProtocol> dataStore;
-@property (nonatomic, strong) id<DataRequestProtocol> networkDataRequest;
+@property (nonatomic, strong) id<DataProviderProtocol> dataProvider;
 
 @end

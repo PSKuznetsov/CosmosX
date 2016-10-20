@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class PONSOModel;
+
 @protocol MainScreenViewInput <NSObject>
 
 /**
@@ -16,6 +18,6 @@
  Метод настраивает начальный стейт view
  */
 - (void)setupInitialState;
-- (void)updateView;
+- (void)updateStateWithEventsLits:(NSArray<PONSOModel *> *)events;
 
 @end

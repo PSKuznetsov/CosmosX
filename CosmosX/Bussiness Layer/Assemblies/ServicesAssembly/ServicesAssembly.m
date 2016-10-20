@@ -7,8 +7,10 @@
 //
 
 #import "ServicesAssembly.h"
+
 #import "APODDataRequestService.h"
 #import "APODDataStoreService.h"
+#import "DataProvider.h"
 
 @implementation ServicesAssembly
 
@@ -31,6 +33,16 @@
                                       with:[self.coreComponent modelAdapter]];
                 [definition injectProperty:@selector(dateFormatter)
                                       with:[self.coreComponent requestDateFormatter]];
+            }];
+}
+
+- (DataProvider *)dataProviderService {
+    return [TyphoonDefinition withClass:[DataProvider class]
+            configuration:^(TyphoonDefinition *definition) {
+                [definition injectProperty:@selector(dataStore)
+                                      with:[self dataStoreService]];
+                [definition injectProperty:@selector(networkDataRequest)
+                                      with:[self apodRequestService]];
             }];
 }
 

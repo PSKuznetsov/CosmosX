@@ -7,26 +7,33 @@
 //
 
 #import "APODVideoEventCollectionViewCell.h"
+#import "APODVideoEventCollectionViewCellObject.h"
+#import "APODCollectionViewCellAttributes.h"
 
 #import "PONSOModel.h"
 #import <youtube-ios-player-helper/YTPlayerView.h>
 
 @implementation APODVideoEventCollectionViewCell
 
-- (void)configureCellWithModelObject:(PONSOModel *)object {
+#pragma mark - <NICollectionViewCell>
+
+- (BOOL)shouldUpdateCellWithObject:(APODVideoEventCollectionViewCellObject *)object {
     
-    self.dateLabel.text  = object.date;
     self.titleLabel.text = object.title;
+    self.dateLabel.text  = object.date;
     
-    [self.videoPlayerView loadVideoByURL:object.url
+    [self.videoPlayerView loadVideoByURL:object.videoUrl
                             startSeconds:0.f
                         suggestedQuality:kYTPlaybackQualityDefault];
+    
+    return YES;
 }
 
-
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
+- (void)setupAttributes {
+    APODCollectionViewCellAttributes* attributes = [[APODCollectionViewCellAttributes alloc] init];
+    [attributes applyAttributeConfigurationOnView:self];
+    
 }
+
 
 @end

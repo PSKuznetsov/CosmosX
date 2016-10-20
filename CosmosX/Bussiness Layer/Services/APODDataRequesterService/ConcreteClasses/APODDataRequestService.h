@@ -24,5 +24,6 @@
 #pragma mark - DataRequestProtocol
 
 - (void)requestDataFromDate:(NSDate *)date completion:(void(^)(PONSOModel* model, NSError* error))block;
+- (void)requestDataWithID:(NSInteger)identifier completion:(void(^)(PONSOModel* model, NSError* error))block;
 
 @end

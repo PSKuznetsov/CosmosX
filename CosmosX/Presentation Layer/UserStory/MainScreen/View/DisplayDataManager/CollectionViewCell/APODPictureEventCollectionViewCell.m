@@ -7,7 +7,12 @@
 //
 
 #import "APODPictureEventCollectionViewCell.h"
+#import "APODPictureEventCollectionViewCellObject.h"
+
 #import "PONSOModel.h"
+#import "EXTScope.h"
+
+#import "APODCollectionViewCellAttributes.h"
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
@@ -15,37 +20,30 @@ static NSString *const kPlaceholderImageName = @"Placeholder";
 
 @implementation APODPictureEventCollectionViewCell
 
-- (void)configureCellWithModelObject:(PONSOModel *)object {
+#pragma mark - <NICollectionViewCell>
+
+- (BOOL)shouldUpdateCellWithObject:(APODPictureEventCollectionViewCellObject *)object {
     
     self.titleLabel.text = object.title;
     self.dateLabel.text  = object.date;
     
-    NSURL* imageURL = [NSURL URLWithString:object.url];
-    
-//    __weak typeof(self) weakSelf = self;
-//    [self.imageView sd_setImageWithURL:imageURL
-//                      placeholderImage:[UIImage imageNamed:kPlaceholderImageName]
-//                             completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-//                                 NSLog(@"ERROR: %@", error.localizedDescription);
-//                                 __strong typeof(self) strongSelf = weakSelf;
-//                                 strongSelf.imageView.image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-//        
-//    }];
+    NSURL* imageURL = [NSURL URLWithString:object.imageUrl];
+    @weakify(self);
     [self.imageView sd_setImageWithURL:imageURL
-                      placeholderImage:[UIImage imageNamed:kPlaceholderImageName]];
-}
-
-- (void)prepareForReuse {
-    [super prepareForReuse];
+                      placeholderImage:[UIImage imageNamed:kPlaceholderImageName]
+                             completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+                                 @strongify(self);
+                                 self.imageView.image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+                             }];
+    [self setupAttributes];
     
-    [self.imageView sd_cancelCurrentImageLoad];
-    self.imageView.image = nil;
-    self.imageView.image = [UIImage imageNamed:kPlaceholderImageName];
+    return YES;
 }
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
+- (void)setupAttributes {
+    APODCollectionViewCellAttributes* attributes = [[APODCollectionViewCellAttributes alloc] init];
+    [attributes applyAttributeConfigurationOnView:self];
+
 }
 
 @end

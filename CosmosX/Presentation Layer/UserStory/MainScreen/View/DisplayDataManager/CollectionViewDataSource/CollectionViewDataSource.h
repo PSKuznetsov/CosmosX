@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DataStoreProtocol.h"
+#import "DataProviderProtocol.h"
 #import "CollectionViewDataProviderDelegate.h"
 
 @import UIKit;
@@ -17,7 +17,7 @@
 #pragma mark - Dependecies
 
 @property (nonatomic, weak) id<CollectionViewDataProviderDelegate> delegate;
-@property (nonatomic, strong) id<DataStoreProtocol> dataStore;
+@property (nonatomic, strong) id<DataProviderProtocol> dataProvider;
 
 #pragma mark - UICollectionViewDataSource
 

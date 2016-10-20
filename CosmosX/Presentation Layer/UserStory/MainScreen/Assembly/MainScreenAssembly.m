@@ -18,6 +18,7 @@
 #import "PostCollectionViewFlowLayout.h"
 #import "PostSizeCalculator.h"
 #import "CollectionViewDataProviderDelegate.h"
+#import "APODEventsCellObjectFactory.h"
 
 #import <ViperMcFlurry/ViperMcFlurry.h>
 
@@ -42,10 +43,8 @@
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(output)
                                                     with:[self presenterMainScreenModule]];
-                              [definition injectProperty:@selector(dataStore)
-                                                    with:[self.services dataStoreService]];
-                              [definition injectProperty:@selector(networkDataRequest)
-                                                    with:[self.services apodRequestService]];
+                              [definition injectProperty:@selector(dataProvider)
+                                                    with:[self.services dataProviderService]];
                           }];
 }
 
@@ -72,10 +71,10 @@
 - (DisplayDataManager *)displayDataManager {
     return [TyphoonDefinition withClass:[DisplayDataManager class]
             configuration:^(TyphoonDefinition *definition) {
-                [definition injectProperty:@selector(delegate)
-                                      with:[self collectionViewDelegate]];
-                [definition injectProperty:@selector(dataSource)
-                                      with:[self collectionViewDataSource]];
+                [definition useInitializer:@selector(initWithCellObjectFactory:delegate:) parameters:^(TyphoonMethod *initializer) {
+                    [initializer injectParameterWith:[self cellObjectFactory]];
+                    [initializer injectParameterWith:[self viewMainScreenModule]];
+                }];
             }];
 }
 
@@ -92,8 +91,8 @@
             configuration:^(TyphoonDefinition *definition) {
                 [definition injectProperty:@selector(delegate)
                                       with:[self viewMainScreenModule]];
-                [definition injectProperty:@selector(dataStore)
-                                      with:[self.services dataStoreService]];
+                [definition injectProperty:@selector(dataProvider)
+                                      with:[self.services dataProviderService]];
             }];
 }
 
@@ -107,6 +106,10 @@
 
 - (PostSizeCalculator *)postSizeCalculator {
     return [TyphoonDefinition withClass:[PostSizeCalculator class]];
+}
+
+- (APODEventsCellObjectFactory *)cellObjectFactory {
+    return [TyphoonDefinition withClass:[APODEventsCellObjectFactory class]];
 }
 
 @end

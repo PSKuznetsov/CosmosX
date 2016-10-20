@@ -10,6 +10,7 @@
 
 #import "MainScreenInteractorOutput.h"
 #import "PONSOModel.h"
+#import <EXTScope.h>
 
 @implementation MainScreenInteractor
 
@@ -19,27 +20,27 @@
     
 }
 
-- (PONSOModel *)retrieveDataForObjectID:(NSInteger)identifier {
-    
-    
+- (void)updateEventList {
+    @weakify(self);
+    [self.dataProvider provideModelForEventIndex:1 completionBlock:^(PONSOModel *model, NSError *error) {
+        @strongify(self);
+        NSMutableArray* events = [NSMutableArray new];
+        
+        [self.output didUpdateEventsListWithEvents:events];
+    }];
 }
 
-- (void)retrieveDataForDate:(NSDate *)date {
+- (NSArray <PONSOModel *> *)obtainEventList {
+    NSMutableArray* events = [NSMutableArray new];
     
-    [self.dataStore modelForDate:date
-             withCompletionBlock:^(PONSOModel *model, NSError *error) {
+    return events;
+}
+
+- (void)retrieveDataForObjectID:(NSInteger)identifier {
+    
+    [self.dataProvider provideModelForEventIndex:identifier
+                                 completionBlock:^(PONSOModel *model, NSError *error) {
         
-    }];
-    
-    __weak typeof(self) weakSelf = self;
-    [self.networkDataRequest requestDataFromDate:date
-                                          completion:^(PONSOModel *model, NSError *error) {
-                                              
-                                              __strong typeof(self) strongSelf = weakSelf;
-                                              [strongSelf.dataStore storeModel:model
-                                                     withCompletionBlock:^(NSError *error) {
-                                                             [strongSelf.output updateMainView];
-                                                     }];
     }];
 }
 

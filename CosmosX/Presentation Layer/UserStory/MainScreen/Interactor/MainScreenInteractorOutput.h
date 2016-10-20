@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class PONSOModel;
+
 @protocol MainScreenInteractorOutput <NSObject>
-- (void)updateMainView;
+
+- (void)didUpdateEventsListWithEvents:(NSArray *)events;
+
 @end

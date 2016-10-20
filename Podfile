@@ -12,6 +12,9 @@ target 'CosmosX' do
   pod 'OCMock'
   pod 'Realm'
   pod 'SDWebImage'
+  pod 'libextobjc'
+  pod 'Nimbus/Models'
+  pod 'Nimbus/Collections'
   pod "ViperMcFlurry"
 
   target 'CosmosXTests' do

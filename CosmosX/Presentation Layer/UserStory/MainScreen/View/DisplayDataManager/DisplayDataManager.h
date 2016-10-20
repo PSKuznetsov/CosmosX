@@ -6,24 +6,23 @@
 //  Copyright © 2016 Paul Kuznetsov. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "DisplayDataManagerProtocol.h"
-#import "CollectionViewDelegate.h"
-#import "CollectionViewDataSource.h"
 
+@class PONSOModel;
+@class APODEventsCellObjectFactory;
+@protocol DisplayDataManagerDelegate;
 
-@import UIKit;
 
 @interface DisplayDataManager : NSObject <DisplayDataManagerProtocol>
 
-#pragma mark - Dependencies
-
-@property (nonatomic, strong) CollectionViewDelegate* delegate;
-@property (nonatomic, strong) CollectionViewDataSource* dataSource;
-
 #pragma mark - Instance methods
+
+- (instancetype)initWithCellObjectFactory:(APODEventsCellObjectFactory *)factory
+                                 delegate:(id<DisplayDataManagerDelegate>)delegate;
 
 - (id <UICollectionViewDataSource>)dataSourceForCollectionVIew;
 - (id <UICollectionViewDelegate>)delegateForCollectionView;
+- (void)updateDataSourceWithEvents:(NSArray *)events;
 
 @end

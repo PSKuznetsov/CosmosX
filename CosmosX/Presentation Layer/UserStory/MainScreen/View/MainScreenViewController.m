@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
     
-	[self.output didTriggerViewReadyEventWithTodayDate];
+	[self.output didTriggerViewReadyEvent];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -34,42 +34,40 @@
     self.navigationController.navigationBar.hidden = YES;
 }
 
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait;
+}
+
 #pragma mark - MainScreenViewInput Methods
 
 - (void)setupInitialState {
-    
-    [self.collectionView registerNib:[UINib nibWithNibName:kVideoEventNib bundle:nil]
-          forCellWithReuseIdentifier:kVideoEventCollectionViewCellIdentifier];
-    
-    [self.collectionView registerNib:[UINib nibWithNibName:kPictureEventNib bundle:nil]
-          forCellWithReuseIdentifier:kPictureEventCollectionViewCellIdentifier];
     
     self.collectionView.collectionViewLayout = self.flowLayout;
     self.collectionView.delegate   = [self.displayDataManager delegateForCollectionView];
     self.collectionView.dataSource = [self.displayDataManager dataSourceForCollectionVIew];
     
-    
-    
     NSLog(@"Loading...");
 }
 
-- (void)updateView {
-    
-    NSLog(@"Reloading View...");
+- (void)updateStateWithEventsLits:(NSArray<PONSOModel *> *)events {
+    [self.displayDataManager updateDataSourceWithEvents:events];
     [self.collectionView reloadData];
 }
 
 #pragma mark - DisplayDataManagerDelegate
 
-- (void)didTapPostInCollectionViewWithImageContent:(NSObject *)imageContent {
-    
+- (void)didTapPostInCollectionViewWithEvent:(PONSOModel *)event {
+    [self.output didTriggerEventTapEventWithObject:event];
 }
 
 #pragma mark - CollectionViewDataProviderDelegate
 
-- (PONSOModel *)obtainModelForObjectID:(NSInteger)identifier {
+- (void)obtainModelForObjectID:(NSInteger)identifier {
     
 }
-
 
 @end

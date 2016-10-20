@@ -78,14 +78,6 @@
 
 - (PONSOModel *)retrieveModelForID:(NSInteger)identifier {
     
-//    RLMResults* results = [[APODData allObjects] sortedResultsUsingProperty:@"date" ascending:NO];
-//    if (results.count < identifier) {
-//        APODData* requestedModel = [results objectAtIndex:identifier];
-//        PONSOModel* model = [self.adapter adaptModel:requestedModel forType:PONSOModelType];
-//        
-//        return model;
-//    }
-    
     NSDate* date = [self.dateFormatter dateForIndex:identifier];
     return [self modelForDate:date];
 }
@@ -102,14 +94,14 @@
     NSDate* today = [self.dateFormatter formatDateForTimeZone:[NSDate date]];
     NSDate* originDate = [self.dateFormatter originDate];
     
-    NSInteger count = [self daysBetweenDate:today andDate:originDate];
-    NSLog(@"DAYS COUNT: %d", count);
+    NSInteger count = [self daysBetweenDate:originDate andDate:today];
+    NSLog(@"DAYS COUNT: %ld", (long)count);
     
     return count;
 }
 
-- (NSInteger)daysBetweenDate:(NSDate*)fromDateTime andDate:(NSDate*)toDateTime
-{
+- (NSInteger)daysBetweenDate:(NSDate*)fromDateTime andDate:(NSDate*)toDateTime {
+    
     NSDate *fromDate;
     NSDate *toDate;
     

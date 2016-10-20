@@ -6,17 +6,15 @@
 //  Copyright © 2016 Paul Kuznetsov. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Nimbus/NimbusCollections.h>
 
-@class PONSOModel;
 @class YTPlayerView;
 
-@interface APODVideoEventCollectionViewCell : UICollectionViewCell
+@interface APODVideoEventCollectionViewCell : UICollectionViewCell <NICollectionViewCell>
 
 @property (nonatomic, weak) IBOutlet YTPlayerView *videoPlayerView;
 @property (nonatomic, weak) IBOutlet UILabel *titleLabel;
 @property (nonatomic, weak) IBOutlet UILabel *dateLabel;
 
-- (void)configureCellWithModelObject:(PONSOModel *)object;
 
 @end

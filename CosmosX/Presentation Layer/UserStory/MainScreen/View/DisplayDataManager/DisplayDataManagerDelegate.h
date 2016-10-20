@@ -6,9 +6,10 @@
 //  Copyright © 2016 Paul Kuznetsov. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-@import UIKit;
+#import <UIKit/UIKit.h>
+
+@class PONSOModel;
 
 @protocol DisplayDataManagerDelegate <NSObject>
-- (void)didTapPostInCollectionViewWithImageContent:(NSObject *)imageContent;
+- (void)didTapPostInCollectionViewWithEvent:(PONSOModel *)event;
 @end

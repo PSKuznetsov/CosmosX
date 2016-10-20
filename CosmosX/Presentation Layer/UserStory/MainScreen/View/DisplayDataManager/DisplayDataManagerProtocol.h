@@ -11,5 +11,6 @@
 
 - (id <UICollectionViewDataSource>)dataSourceForCollectionVIew;
 - (id <UICollectionViewDelegate>)delegateForCollectionView;
+- (void)updateDataSourceWithEvents:(NSArray *)events;
 
 @end
